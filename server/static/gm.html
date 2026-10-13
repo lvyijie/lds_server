@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>龙斗士 GM 后台管理与游戏图鉴系统</title>
+  <style>
+    :root {
+      --bg-dark: #0f141c;
+      --bg-card: #18202c;
+      --bg-card-hover: #1f2a3a;
+      --border-color: #273549;
+      --primary: #3b82f6;
+      --primary-hover: #2563eb;
+      --accent: #8b5cf6;
+      --success: #10b981;
+      --warning: #f59e0b;
+      --danger: #ef4444;
+      --text-main: #f1f5f9;
+      --text-sub: #94a3b8;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Microsoft YaHei", sans-serif;
+    }
+    body {
+      background-color: var(--bg-dark);
+      color: var(--text-main);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      background-color: var(--bg-card);
+      border-bottom: 1px solid var(--border-color);
+      padding: 16px 32px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    }
+    .logo-container {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .logo-badge {
+      background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+      width: 38px;
+      height: 38px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 20px;
+      color: #fff;
+    }
+    .logo-title h1 {
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+    }
+    .logo-title p {
+      font-size: 12px;
+      color: var(--text-sub);
+    }
+    .nav-tabs {
+      display: flex;
+      gap: 8px;
+      background: #111722;
+      padding: 4px;
+      border-radius: 8px;
+      border: 1px solid var(--border-color);
+    }
+    .nav-btn {
+      background: transparent;
+      border: none;
+      color: var(--text-sub);
+      padding: 8px 18px;
+      border-radius: 6px;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+    .nav-btn:hover {
+      color: var(--text-main);
+    }
+    .nav-btn.active {
+      background: var(--primary);
+      color: #fff;
+      box-shadow: 0 2px 8px rgba(59, 130, 246, 0.4);
+    }
+    main {
+      flex: 1;
+      padding: 24px 32px;
+      max-width: 1440px;
+      margin: 0 auto;
+      width: 100%;
+    }
+    .tab-content {
+      display: none;
+    }
+    .tab-content.active {
+      display: block;
+      animation: fadeIn 0.2s ease-in-out;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(4px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 24px;
+      margin-bottom: 24px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    }
+    .card-title {
+      font-size: 16px;
+      font-weight: 700;
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: #60a5fa;
+    }
+    .grid-4 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+    }
+    .stat-item {
+      background: #121824;
+      padding: 14px 16px;
+      border-radius: 8px;
+      border: 1px solid var(--border-color);
+    }
+    .stat-label {
+      font-size: 12px;
+      color: var(--text-sub);
+      margin-bottom: 6px;
+    }
+    .stat-value {
+      font-size: 20px;
+      font-weight: bold;
+      color: #38bdf8;
+    }
+    .form-group {
+      margin-bottom: 16px;
+    }
+    .form-label {
+      display: block;
+      font-size: 13px;
+      font-weight: 600;
+      margin-bottom: 6px;
+      color: var(--text-sub);
+    }
+    .form-control {
+      width: 100%;
+      background: #111722;
+      border: 1px solid var(--border-color);
+      color: var(--text-main);
+      padding: 10px 14px;
+      border-radius: 6px;
+      font-size: 14px;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+    .form-control:focus {
+      border-color: var(--primary);
+    }
+    .btn-group {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    .btn {
+      padding: 10px 18px;
+      border-radius: 6px;
+      font-size: 13px;
+      font-weight: 600;
+      border: none;
+      cursor: pointer;
+      transition: all 0.2s;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .btn-primary {
+      background: var(--primary);
+      color: #fff;
+    }
+    .btn-primary:hover {
+      background: var(--primary-hover);
+    }
+    .btn-success {
+      background: var(--success);
+      color: #fff;
+    }
+    .btn-success:hover {
+      background: #059669;
+    }
+    .btn-warning {
+      background: var(--warning);
+      color: #fff;
+    }
+    .btn-warning:hover {
+      background: #d97706;
+    }
+    .btn-danger {
+      background: var(--danger);
+      color: #fff;
+    }
+    .btn-danger:hover {
+      background: #dc2626;
+    }
+    .btn-outline {
+      background: transparent;
+      border: 1px solid var(--border-color);
+      color: var(--text-sub);
+    }
+    .btn-outline:hover {
+      border-color: var(--primary);
+      color: var(--text-main);
+    }
+    .search-box {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+    .cat-pills {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-bottom: 16px;
+    }
+    .cat-pill {
+      background: #121824;
+      border: 1px solid var(--border-color);
+      color: var(--text-sub);
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 13px;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .cat-pill:hover, .cat-pill.active {
+      background: #1e3a8a;
+      border-color: var(--primary);
+      color: #fff;
+    }
+    .table-container {
+      overflow-x: auto;
+      border-radius: 8px;
+      border: 1px solid var(--border-color);
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+      font-size: 13px;
+    }
+    th {
+      background: #131a26;
+      color: var(--text-sub);
+      padding: 12px 16px;
+      font-weight: 600;
+      border-bottom: 1px solid var(--border-color);
+    }
+    td {
+      padding: 12px 16px;
+      border-bottom: 1px solid #1a2332;
+    }
+    tr:hover {
+      background: var(--bg-card-hover);
+    }
+    .badge {
+      display: inline-block;
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-size: 11px;
+      font-weight: bold;
+    }
+    .badge-primary { background: rgba(59, 130, 246, 0.2); color: #60a5fa; }
+    .badge-purple { background: rgba(139, 92, 246, 0.2); color: #c084fc; }
+    .badge-gold { background: rgba(245, 158, 11, 0.2); color: #fbbf24; }
+    .badge-green { background: rgba(16, 185, 129, 0.2); color: #34d399; }
+    .pagination {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 16px;
+      font-size: 13px;
+      color: var(--text-sub);
+    }
+    .toast {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      background: #1e293b;
+      border: 1px solid var(--border-color);
+      color: #fff;
+      padding: 12px 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+      display: none;
+      z-index: 1000;
+      animation: slideIn 0.2s ease-out;
+    }
+    @keyframes slideIn {
+      from { transform: translateY(20px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <div class="logo-badge">LDS</div>
+      <div class="logo-title">
+        <h1>龙斗士 GM 管理后台</h1>
+        <p>角色属性动态调控与原生全图鉴检索系统</p>
+      </div>
+    </div>
+    <div class="nav-tabs">
+      <button class="nav-btn active" onclick="switchTab('tab-role')">👑 角色属性调整</button>
+      <button class="nav-btn" onclick="switchTab('tab-encyclopedia')">📖 游戏全图鉴与发放</button>
+      <button class="nav-btn" onclick="switchTab('tab-bag')">🎒 背包与战宠管理</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- TAB 1: 角色属性调整 -->
+    <div id="tab-role" class="tab-content active">
+      <div class="card">
+        <div class="card-title">⚡ 角色核心状态看板</div>
+        <div class="grid-4">
+          <div class="stat-item">
+            <div class="stat-label">角色昵称 (ID)</div>
+            <div class="stat-value" id="disp-name">--</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-label">角色等级 / 职业</div>
+            <div class="stat-value" id="disp-level-job">--</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-label">金币余额</div>
+            <div class="stat-value" id="disp-coin">--</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-label">充值龙币 (圣龙骑士专属)</div>
+            <div class="stat-value" id="disp-dragon-coin" style="color:#f59e0b;">--</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-title">🛠️ 快捷调整与一键满配</div>
+        <div class="btn-group" style="margin-bottom: 20px;">
+          <button class="btn btn-primary" onclick="quickFillMax()">🚀 一键角色全部拉满 (满级+9999万金币+99万龙币+满级VIP)</button>
+          <button class="btn btn-warning" onclick="quickAddDragonCoin(100000)">💎 一键充值 +100,000 龙币</button>
+          <button class="btn btn-success" onclick="quickVipMax()">🛡️ 一键激活满级圣龙骑士 (Lv.7 圣皇年费)</button>
+          <button class="btn btn-outline" onclick="loadPlayerData()">🔄 刷新最新数据</button>
+        </div>
+
+        <div class="card-title" style="margin-top:24px; color:#93c5fd;">✏️ 精细属性自定义表单</div>
+        <div class="grid-4">
+          <div class="form-group">
+            <label class="form-label">角色等级 (1 - 100)</label>
+            <input type="number" id="input-level" class="form-control" min="1" max="100">
+          </div>
+          <div class="form-group">
+            <label class="form-label">金币数量</label>
+            <input type="number" id="input-coin" class="form-control">
+          </div>
+          <div class="form-group">
+            <label class="form-label">龙币数量 (商城充值货币)</label>
+            <input type="number" id="input-dragon-coin" class="form-control">
+          </div>
+          <div class="form-group">
+            <label class="form-label">角色经验值 (EXP)</label>
+            <input type="number" id="input-exp" class="form-control">
+          </div>
+          <div class="form-group">
+            <label class="form-label">圣龙骑士 VIP 等级 (0 - 7)</label>
+            <select id="input-vip-level" class="form-control">
+              <option value="0">0 (未激活)</option>
+              <option value="1">1 级</option>
+              <option value="2">2 级</option>
+              <option value="3">3 级</option>
+              <option value="4">4 级</option>
+              <option value="5">5 级</option>
+              <option value="6">6 级</option>
+              <option value="7">7 级 (圣龙至尊)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label">角色职业</label>
+            <select id="input-job" class="form-control">
+              <option value="1">战士 (Warrior)</option>
+              <option value="2">弓箭手 (Archer)</option>
+              <option value="3">法师 (Mage)</option>
+              <option value="4">圣骑士 (Paladin)</option>
+              <option value="5">祭司 (Priest)</option>
+              <option value="6">魔剑士 (Magic Swordsman)</option>
+              <option value="7">狂战士 (Berserker)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label">生命值上限 (MHP)</label>
+            <input type="number" id="input-mhp" class="form-control">
+          </div>
+          <div class="form-group">
+            <label class="form-label">魔法值上限 (MMP)</label>
+            <input type="number" id="input-mmp" class="form-control">
+          </div>
+        </div>
+        <button class="btn btn-success" style="margin-top: 12px; width: 200px;" onclick="savePlayerAttributes()">💾 保存属性修改</button>
+      </div>
+    </div>
+
+    <!-- TAB 2: 游戏全图鉴与发放 -->
+    <div id="tab-encyclopedia" class="tab-content">
+      <div class="card">
+        <div class="card-title">🔍 游戏原生资源图鉴检索 (装备 / 战宠 / 服饰 / 材料 / 道具 / 商城)</div>
+        
+        <div class="search-box">
+          <input type="text" id="search-keyword" class="form-control" placeholder="输入原生名称或物品ID (例如: 暗灭帝尊, 雷鸣, 觉醒之石, 100494)..." onkeydown="if(event.key==='Enter') searchEncyclopedia(1)">
+          <button class="btn btn-primary" onclick="searchEncyclopedia(1)">🔍 立即搜索</button>
+        </div>
+
+        <div class="cat-pills">
+          <button class="cat-pill active" onclick="setCategory('all', this)">全部资源</button>
+          <button class="cat-pill" onclick="setCategory('equip', this)">🛡️ 装备图鉴</button>
+          <button class="cat-pill" onclick="setCategory('cloth', this)">👗 时装服饰</button>
+          <button class="cat-pill" onclick="setCategory('pet', this)">🐉 战宠图鉴</button>
+          <button class="cat-pill" onclick="setCategory('consume', this)">🧪 消耗品/药剂</button>
+          <button class="cat-pill" onclick="setCategory('stuff', this)">💎 材料/宝石</button>
+          <button class="cat-pill" onclick="setCategory('mall', this)">🛍️ 商城热卖</button>
+        </div>
+
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th style="width: 100px;">原生 ID</th>
+                <th style="width: 180px;">物品/战宠名称</th>
+                <th style="width: 120px;">分类</th>
+                <th style="width: 100px;">品质/等级</th>
+                <th>详细描述 / 内含奖励</th>
+                <th style="width: 160px;">一键发放</th>
+              </tr>
+            </thead>
+            <tbody id="encyclopedia-tbody">
+              <tr><td colspan="6" style="text-align:center; padding: 24px; color: var(--text-sub);">正在加载游戏图鉴数据...</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="pagination">
+          <span id="page-info">共 0 条记录</span>
+          <div class="btn-group">
+            <button class="btn btn-outline" id="btn-prev" onclick="changePage(-1)">上一页</button>
+            <button class="btn btn-outline" id="btn-next" onclick="changePage(1)">下一页</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TAB 3: 背包与战宠管理 -->
+    <div id="tab-bag" class="tab-content">
+      <div class="card">
+        <div class="card-title">🐉 出战战宠属性与进阶</div>
+        <div id="pet-info-box" style="margin-bottom: 16px;"></div>
+        <div class="btn-group">
+          <button class="btn btn-primary" onclick="grantPetMax(100494, '暗灭帝尊')">🌟 发放满级五阶【暗灭帝尊】</button>
+          <button class="btn btn-primary" onclick="grantPetMax(100492, '不朽·天照龙王')">🌟 发放满级五阶【不朽·天照龙王】</button>
+          <button class="btn btn-primary" onclick="grantPetMax(100503, '不朽·无极东皇')">🌟 发放满级五阶【不朽·无极东皇】</button>
+          <button class="btn btn-warning" onclick="wakeCurrentPet(5)">⚡ 当前战宠一键觉醒至 5 阶</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-title">👗 时装服饰快捷发放</div>
+        <p style="font-size:13px; color:var(--text-sub); margin-bottom: 12px;">
+          输入时装服饰 ID 直接发放到衣柜。在线时会通过 <code>8_0</code> 协议实时同步更新，无需重新登录。
+        </p>
+        <div style="display:flex; gap:12px; align-items:center; max-width:480px;">
+          <input type="number" id="input-quick-cloth-id" class="form-control" placeholder="输入时装 ID (例如: 100381, 800450)">
+          <button class="btn btn-primary" style="white-space:nowrap;" onclick="grantClothQuick()">🎁 立即发放时装</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-title">🎒 角色背包健康度维护</div>
+        <p style="font-size:13px; color:var(--text-sub); margin-bottom: 16px;">
+          若之前在商城购买异常或背包内存在错误数据导致角色/宠物界面无法打开，可点击下方一键清洗按钮，自动过滤非法脏数据并保留所有合法装备服饰。
+        </p>
+        <button class="btn btn-danger" onclick="cleanPlayerBag()">🧹 一键清洗背包与服饰脏数据</button>
+      </div>
+
+      <div class="card">
+        <div class="card-title">📦 已拥有服饰与物品列表</div>
+        <div id="bag-list-box" style="font-size: 13px; color: var(--text-sub);"></div>
+      </div>
+    </div>
+  </main>
+
+  <div id="toast" class="toast"></div>
+
+  <script>
+    let currentCategory = 'all';
+    let currentPage = 1;
+    let totalPages = 1;
+    let playerData = null;
+
+    function showToast(msg, isSuccess = true) {
+      const toast = document.getElementById('toast');
+      toast.textContent = msg;
+      toast.style.borderColor = isSuccess ? '#10b981' : '#ef4444';
+      toast.style.display = 'block';
+      setTimeout(() => { toast.style.display = 'none'; }, 2500);
+    }
+
+    function switchTab(tabId) {
+      document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
+      document.querySelectorAll('.nav-btn').forEach(el => el.classList.remove('active'));
+      document.getElementById(tabId).classList.add('active');
+      event.target.classList.add('active');
+      if (tabId === 'tab-encyclopedia' && document.getElementById('encyclopedia-tbody').children.length <= 1) {
+        searchEncyclopedia(1);
+      }
+    }
+
+    async function loadPlayerData() {
+      try {
+        const res = await fetch('/api/gm/player');
+        playerData = await res.json();
+        const b = playerData.basic || {};
+        
+        document.getElementById('disp-name').textContent = `${b.user_name || '玩家'} (${b.char_id || 88343134})`;
+        document.getElementById('disp-level-job').textContent = `Lv.${b.level || 1} [${b.job_name || '战士'}]`;
+        document.getElementById('disp-coin').textContent = (b.coin || 0).toLocaleString();
+        document.getElementById('disp-dragon-coin').textContent = (b.dragon_coin || 0).toLocaleString();
+
+        document.getElementById('input-level').value = b.level || 1;
+        document.getElementById('input-coin').value = b.coin || 0;
+        document.getElementById('input-dragon-coin').value = b.dragon_coin || 0;
+        document.getElementById('input-exp').value = b.exp || 0;
+        document.getElementById('input-vip-level').value = b.vip_level || 0;
+        document.getElementById('input-job').value = b.job || 1;
+        document.getElementById('input-mhp').value = b.mhp || 836;
+        document.getElementById('input-mmp').value = b.mmp || 180;
+
+        renderBagAndPet();
+      } catch (err) {
+        showToast('加载角色数据失败: ' + err, false);
+      }
+    }
+
+    function renderBagAndPet() {
+      if (!playerData) return;
+      const pet = playerData.pet || {};
+      const petHtml = `
+        <div style="background:#111722; padding:16px; border-radius:8px; border:1px solid #273549;">
+          <h3 style="color:#60a5fa; margin-bottom:8px;">${pet.n || pet.ptn || '无战宠'} (ID: ${pet.pti || 0})</h3>
+          <p>等级: <b>Lv.${pet.lv || 1}</b> | 觉醒阶位: <b>${pet.ecs || 0} 阶</b> | 生命值: <b>${pet.mhp || 0}</b> | 攻击力: <b>${pet.mnA || 0} - ${pet.mxA || 0}</b></p>
+        </div>
+      `;
+      document.getElementById('pet-info-box').innerHTML = petHtml;
+
+      const bag = playerData.bag || {};
+      const clothCount = (bag.cloth || []).length;
+      const bagItems = bag.items || [];
+      const equipment = bagItems.filter(item => Number(item.t) === 0);
+      const equipCount = equipment.length;
+      const equipIds = equipment.map(item => item.mid);
+      const itemsCount = bagItems.length - equipCount;
+      document.getElementById('bag-list-box').innerHTML = `
+        <p>已拥有服饰数量: <b>${clothCount}</b> 件 (IDs: ${(bag.cloth || []).join(', ')})</p>
+        <p style="margin-top:8px;">背包装备数量: <b>${equipCount}</b> 件 (IDs: ${equipIds.join(', ')})</p>
+        <p style="margin-top:8px;">背包道具种类: <b>${itemsCount}</b> 种</p>
+      `;
+    }
+
+    async function savePlayerAttributes() {
+      const payload = {
+        cid: playerData?.char_id || 88343134,
+        level: parseInt(document.getElementById('input-level').value) || 1,
+        coin: parseInt(document.getElementById('input-coin').value) || 0,
+        dragon_coin: parseInt(document.getElementById('input-dragon-coin').value) || 0,
+        exp: parseInt(document.getElementById('input-exp').value) || 0,
+        vip_level: parseInt(document.getElementById('input-vip-level').value) || 0,
+        job: parseInt(document.getElementById('input-job').value) || 1,
+        mhp: parseInt(document.getElementById('input-mhp').value) || 836,
+        mmp: parseInt(document.getElementById('input-mmp').value) || 180,
+      };
+
+      try {
+        const res = await fetch('/api/gm/player/update', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload)
+        });
+        const data = await res.json();
+        if (data.success) {
+          showToast('✅ 角色属性已成功保存并落盘！');
+          loadPlayerData();
+        } else {
+          showToast('❌ 保存失败: ' + data.message, false);
+        }
+      } catch (err) {
+        showToast('保存异常: ' + err, false);
+      }
+    }
+
+    async function quickFillMax() {
+      document.getElementById('input-level').value = 100;
+      document.getElementById('input-coin').value = 99999999;
+      document.getElementById('input-dragon-coin').value = 999999;
+      document.getElementById('input-vip-level').value = 7;
+      document.getElementById('input-mhp').value = 99999;
+      document.getElementById('input-mmp').value = 99999;
+      await savePlayerAttributes();
+    }
+
+    async function quickAddDragonCoin(amount) {
+      const cur = parseInt(document.getElementById('input-dragon-coin').value) || 0;
+      document.getElementById('input-dragon-coin').value = cur + amount;
+      await savePlayerAttributes();
+    }
+
+    async function quickVipMax() {
+      document.getElementById('input-vip-level').value = 7;
+      await savePlayerAttributes();
+    }
+
+    function setCategory(cat, btn) {
+      currentCategory = cat;
+      document.querySelectorAll('.cat-pill').forEach(el => el.classList.remove('active'));
+      btn.classList.add('active');
+      searchEncyclopedia(1);
+    }
+
+    async function searchEncyclopedia(page = 1) {
+      currentPage = page;
+      const keyword = document.getElementById('search-keyword').value.trim();
+      const tbody = document.getElementById('encyclopedia-tbody');
+      tbody.innerHTML = '<tr><td colspan="6" style="text-align:center; padding: 24px; color: var(--text-sub);">正在检索数据...</td></tr>';
+
+      try {
+        const res = await fetch(`/api/gm/encyclopedia?category=${currentCategory}&keyword=${encodeURIComponent(keyword)}&page=${page}&page_size=15`);
+        const data = await res.json();
+        
+        totalPages = Math.ceil(data.total / data.page_size) || 1;
+        document.getElementById('page-info').textContent = `共 ${data.total} 项 (第 ${data.page} / ${totalPages} 页)`;
+        document.getElementById('btn-prev').disabled = data.page <= 1;
+        document.getElementById('btn-next').disabled = data.page >= totalPages;
+
+        if (data.items.length === 0) {
+          tbody.innerHTML = '<tr><td colspan="6" style="text-align:center; padding: 24px; color: var(--text-sub);">未找到相关物品</td></tr>';
+          return;
+        }
+
+        let html = '';
+        data.items.forEach(item => {
+          let badgeClass = 'badge-primary';
+          if (item.category === 'pet') badgeClass = 'badge-purple';
+          else if (item.category === 'mall') badgeClass = 'badge-gold';
+          else if (item.category === 'cloth') badgeClass = 'badge-green';
+
+          html += `
+            <tr>
+              <td><b style="color:#38bdf8;">${item.id}</b></td>
+              <td><b>${escapeHtml(item.name)}</b></td>
+              <td><span class="badge ${badgeClass}">${item.category_name || item.category}</span></td>
+              <td>${item.level ? 'Lv.' + item.level : '-'}</td>
+              <td style="color:var(--text-sub);">${escapeHtml(item.desc || '')}</td>
+              <td>
+                <button class="btn btn-primary" style="padding:4px 10px; font-size:12px;" onclick="grantItem('${item.category}', ${item.id}, '${escapeHtml(item.name)}')">
+                  🎁 发放给角色
+                </button>
+              </td>
+            </tr>
+          `;
+        });
+        tbody.innerHTML = html;
+      } catch (err) {
+        tbody.innerHTML = `<tr><td colspan="6" style="text-align:center; padding: 24px; color:#ef4444;">检索失败: ${err}</td></tr>`;
+      }
+    }
+
+    function changePage(delta) {
+      const next = currentPage + delta;
+      if (next >= 1 && next <= totalPages) {
+        searchEncyclopedia(next);
+      }
+    }
+
+    async function grantItem(category, id, name) {
+      const count = prompt(`发放【${name}】(ID: ${id}) 到当前角色，请输入数量:`, "1");
+      if (!count || isNaN(count) || parseInt(count) <= 0) return;
+
+      try {
+        const res = await fetch('/api/gm/player/grant', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            cid: playerData?.char_id || 88343134,
+            category: category,
+            item_id: id,
+            count: parseInt(count)
+          })
+        });
+        const data = await res.json();
+        if (data.success) {
+          showToast(`✅ ${data.message || `成功发放【${name}】x${count} 给角色！`}`);
+          loadPlayerData();
+        } else {
+          showToast('❌ 发放失败: ' + data.message, false);
+        }
+      } catch (err) {
+        showToast('发放异常: ' + err, false);
+      }
+    }
+
+    async function grantPetMax(pti, name) {
+      try {
+        const res = await fetch('/api/gm/player/grant', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            cid: playerData?.char_id || 88343134,
+            category: 'pet',
+            item_id: pti,
+            count: 1
+          })
+        });
+        const data = await res.json();
+        if (data.success) {
+          showToast(`✅ ${data.message || `成功发放满级满阶神宠【${name}】！`}`);
+          loadPlayerData();
+        } else {
+          showToast('❌ 发放失败: ' + data.message, false);
+        }
+      } catch (err) {
+        showToast('神宠发放异常: ' + err, false);
+      }
+    }
+
+    async function wakeCurrentPet(ecs = 5) {
+      try {
+        const res = await fetch(`/api/wake_pet?pid=${playerData?.pet?.pi || 1}&ecs=${ecs}`);
+        const data = await res.json();
+        if (data.success) {
+          showToast(`✅ 当前出战战宠已成功觉醒至 ${ecs} 阶！`);
+          loadPlayerData();
+        }
+      } catch (err) {
+        showToast('觉醒失败: ' + err, false);
+      }
+    }
+
+    async function cleanPlayerBag() {
+      try {
+        const cid = playerData?.char_id || 88343134;
+        const res = await fetch(`/api/gm/player/clean?cid=${encodeURIComponent(cid)}`, { method: 'POST' });
+        const data = await res.json();
+        if (data.success) {
+          showToast('✅ 背包与服饰脏数据清洗完毕！');
+          loadPlayerData();
+        }
+      } catch (err) {
+        showToast('清洗异常: ' + err, false);
+      }
+    }
+
+    async function grantClothQuick() {
+      const clothId = parseInt(document.getElementById('input-quick-cloth-id').value);
+      if (!clothId || isNaN(clothId) || clothId <= 0) {
+        showToast('请输入有效的时装 ID', false);
+        return;
+      }
+      try {
+        const res = await fetch('/api/gm/player/grant', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            cid: playerData?.char_id || 88343134,
+            category: 'cloth',
+            item_id: clothId,
+            count: 1
+          })
+        });
+        const data = await res.json();
+        if (data.success) {
+          showToast(`✅ ${data.message || `成功发放时装 ID ${clothId}！`}`);
+          document.getElementById('input-quick-cloth-id').value = '';
+          loadPlayerData();
+        } else {
+          showToast('❌ 发放失败: ' + data.message, false);
+        }
+      } catch (err) {
+        showToast('时装发放异常: ' + err, false);
+      }
+    }
+
+    function escapeHtml(str) {
+      return (str || '').replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+    }
+
+    window.onload = function() {
+      loadPlayerData();
+    };
+  </script>
+</body>
+</html>
