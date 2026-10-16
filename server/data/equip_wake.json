@@ -1,0 +1,4206 @@
+{
+ "_note": "equipId -> 觉醒后 wakeEquipId；mid/num 是觉醒所需材料与数量（客户端会先要求玩家把 wakeEquipId 那件装备拿到手再放上去）",
+ "_source": "07-swf/downloaded_core/play/festivalext3/equipwakemachine~2018021311337799.swf :: DefineBinaryData chid=914 (mmo.festival.ext3.equipwakemachine.panels.EquipWakeData_equipWakeClass) —— 脏 XML 经规范化后解析，见 scratch/_build_equipwake_map.py",
+ "rows": {
+  "1000018": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 8,
+   "level": 30,
+   "mallGoodsId": 5230057,
+   "mid": 1229,
+   "num": 6,
+   "wakeEquipId": 1010004
+  },
+  "1000023": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 8,
+   "level": 40,
+   "mallGoodsId": 5230058,
+   "mid": 1230,
+   "num": 15,
+   "wakeEquipId": 1010005
+  },
+  "1000028": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 8,
+   "level": 50,
+   "mallGoodsId": 5230059,
+   "mid": 1231,
+   "num": 20,
+   "wakeEquipId": 1010006
+  },
+  "1000034": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 8,
+   "level": 60,
+   "mallGoodsId": 5230060,
+   "mid": 1267,
+   "num": 30,
+   "wakeEquipId": 1010007
+  },
+  "100043": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 1,
+   "level": 30,
+   "mallGoodsId": 5110029,
+   "mid": 1229,
+   "num": 10,
+   "wakeEquipId": 112004
+  },
+  "100054": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 1,
+   "level": 40,
+   "mallGoodsId": 5110030,
+   "mid": 1230,
+   "num": 25,
+   "wakeEquipId": 112005
+  },
+  "100055": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 1,
+   "level": 50,
+   "mallGoodsId": 5110031,
+   "mid": 1231,
+   "num": 40,
+   "wakeEquipId": 112006
+  },
+  "100086": {
+   "awake": 1,
+   "isNew": 0,
+   "job": 1,
+   "level": 50,
+   "mallGoodsId": 5110101,
+   "mid": 1251,
+   "num": 450,
+   "wakeEquipId": 112008
+  },
+  "100089": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 1,
+   "level": 60,
+   "mallGoodsId": 5110032,
+   "mid": 1267,
+   "num": 60,
+   "wakeEquipId": 112009
+  },
+  "100091": {
+   "awake": 1,
+   "isNew": 0,
+   "job": 1,
+   "level": 60,
+   "mallGoodsId": 5110119,
+   "mid": 1296,
+   "num": 888,
+   "wakeEquipId": 112013
+  },
+  "1001018": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 8,
+   "level": 30,
+   "mallGoodsId": 5250057,
+   "mid": 1229,
+   "num": 6,
+   "wakeEquipId": 1011004
+  },
+  "1001023": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 8,
+   "level": 40,
+   "mallGoodsId": 5250058,
+   "mid": 1230,
+   "num": 15,
+   "wakeEquipId": 1011005
+  },
+  "1001028": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 8,
+   "level": 50,
+   "mallGoodsId": 5250059,
+   "mid": 1231,
+   "num": 20,
+   "wakeEquipId": 1011006
+  },
+  "1001034": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 8,
+   "level": 60,
+   "mallGoodsId": 5250060,
+   "mid": 1267,
+   "num": 30,
+   "wakeEquipId": 1011007
+  },
+  "1002015": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 8,
+   "level": 30,
+   "mallGoodsId": 5260057,
+   "mid": 1229,
+   "num": 6,
+   "wakeEquipId": 1012004
+  },
+  "1002020": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 8,
+   "level": 40,
+   "mallGoodsId": 5260058,
+   "mid": 1230,
+   "num": 15,
+   "wakeEquipId": 1012005
+  },
+  "1002025": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 8,
+   "level": 50,
+   "mallGoodsId": 5260059,
+   "mid": 1231,
+   "num": 20,
+   "wakeEquipId": 1012006
+  },
+  "1002031": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 8,
+   "level": 60,
+   "mallGoodsId": 5260060,
+   "mid": 1267,
+   "num": 30,
+   "wakeEquipId": 1012007
+  },
+  "1003015": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 8,
+   "level": 30,
+   "mallGoodsId": 5240057,
+   "mid": 1229,
+   "num": 6,
+   "wakeEquipId": 1013004
+  },
+  "1003020": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 8,
+   "level": 40,
+   "mallGoodsId": 5240058,
+   "mid": 1230,
+   "num": 15,
+   "wakeEquipId": 1013005
+  },
+  "1003025": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 8,
+   "level": 50,
+   "mallGoodsId": 5240059,
+   "mid": 1231,
+   "num": 20,
+   "wakeEquipId": 1013006
+  },
+  "1003031": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 8,
+   "level": 60,
+   "mallGoodsId": 5240060,
+   "mid": 1267,
+   "num": 30,
+   "wakeEquipId": 1013007
+  },
+  "1004015": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 8,
+   "level": 30,
+   "mallGoodsId": 5210057,
+   "mid": 1229,
+   "num": 6,
+   "wakeEquipId": 1014004
+  },
+  "1004020": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 8,
+   "level": 40,
+   "mallGoodsId": 5210058,
+   "mid": 1230,
+   "num": 15,
+   "wakeEquipId": 1014005
+  },
+  "1004025": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 8,
+   "level": 50,
+   "mallGoodsId": 5210059,
+   "mid": 1231,
+   "num": 20,
+   "wakeEquipId": 1014006
+  },
+  "1004031": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 8,
+   "level": 60,
+   "mallGoodsId": 5210060,
+   "mid": 1267,
+   "num": 30,
+   "wakeEquipId": 1014007
+  },
+  "1005012": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 8,
+   "level": 30,
+   "mallGoodsId": 5220057,
+   "mid": 1229,
+   "num": 6,
+   "wakeEquipId": 1015004
+  },
+  "1005017": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 8,
+   "level": 40,
+   "mallGoodsId": 5220058,
+   "mid": 1230,
+   "num": 15,
+   "wakeEquipId": 1015005
+  },
+  "1005022": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 8,
+   "level": 50,
+   "mallGoodsId": 5220059,
+   "mid": 1231,
+   "num": 20,
+   "wakeEquipId": 1015006
+  },
+  "1005028": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 8,
+   "level": 60,
+   "mallGoodsId": 5220060,
+   "mid": 1267,
+   "num": 30,
+   "wakeEquipId": 1015007
+  },
+  "101044": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 1,
+   "level": 30,
+   "mallGoodsId": 5120029,
+   "mid": 1229,
+   "num": 10,
+   "wakeEquipId": 113004
+  },
+  "101055": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 1,
+   "level": 40,
+   "mallGoodsId": 5120030,
+   "mid": 1230,
+   "num": 25,
+   "wakeEquipId": 113005
+  },
+  "101056": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 1,
+   "level": 50,
+   "mallGoodsId": 5120031,
+   "mid": 1231,
+   "num": 30,
+   "wakeEquipId": 113006
+  },
+  "101088": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 1,
+   "level": 60,
+   "mallGoodsId": 5120032,
+   "mid": 1267,
+   "num": 40,
+   "wakeEquipId": 113007
+  },
+  "101097": {
+   "awake": 1,
+   "isNew": 0,
+   "job": 1,
+   "level": 50,
+   "mallGoodsId": 5120101,
+   "mid": 1251,
+   "num": 450,
+   "wakeEquipId": 113012
+  },
+  "101098": {
+   "awake": 1,
+   "isNew": 0,
+   "job": 1,
+   "level": 60,
+   "mallGoodsId": 5120119,
+   "mid": 1296,
+   "num": 888,
+   "wakeEquipId": 113013
+  },
+  "102043": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 2,
+   "level": 30,
+   "mallGoodsId": 5110033,
+   "mid": 1229,
+   "num": 10,
+   "wakeEquipId": 114004
+  },
+  "102054": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 2,
+   "level": 50,
+   "mallGoodsId": 5110035,
+   "mid": 1231,
+   "num": 40,
+   "wakeEquipId": 114006
+  },
+  "102055": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 2,
+   "level": 40,
+   "mallGoodsId": 5110034,
+   "mid": 1230,
+   "num": 25,
+   "wakeEquipId": 114005
+  },
+  "102086": {
+   "awake": 1,
+   "isNew": 0,
+   "job": 2,
+   "level": 50,
+   "mallGoodsId": 5110102,
+   "mid": 1251,
+   "num": 450,
+   "wakeEquipId": 114008
+  },
+  "102089": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 2,
+   "level": 60,
+   "mallGoodsId": 5110036,
+   "mid": 1267,
+   "num": 60,
+   "wakeEquipId": 114009
+  },
+  "102091": {
+   "awake": 1,
+   "isNew": 0,
+   "job": 2,
+   "level": 60,
+   "mallGoodsId": 5110120,
+   "mid": 1296,
+   "num": 888,
+   "wakeEquipId": 114013
+  },
+  "103044": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 2,
+   "level": 30,
+   "mallGoodsId": 5120033,
+   "mid": 1229,
+   "num": 10,
+   "wakeEquipId": 115004
+  },
+  "103055": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 2,
+   "level": 50,
+   "mallGoodsId": 5120035,
+   "mid": 1231,
+   "num": 30,
+   "wakeEquipId": 115006
+  },
+  "103056": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 2,
+   "level": 40,
+   "mallGoodsId": 5120034,
+   "mid": 1230,
+   "num": 25,
+   "wakeEquipId": 115005
+  },
+  "103088": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 2,
+   "level": 60,
+   "mallGoodsId": 5120036,
+   "mid": 1267,
+   "num": 40,
+   "wakeEquipId": 115007
+  },
+  "103097": {
+   "awake": 1,
+   "isNew": 0,
+   "job": 2,
+   "level": 50,
+   "mallGoodsId": 5120102,
+   "mid": 1251,
+   "num": 450,
+   "wakeEquipId": 115012
+  },
+  "103098": {
+   "awake": 1,
+   "isNew": 0,
+   "job": 2,
+   "level": 60,
+   "mallGoodsId": 5120120,
+   "mid": 1296,
+   "num": 888,
+   "wakeEquipId": 115013
+  },
+  "104023": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 3,
+   "level": 30,
+   "mallGoodsId": 5110037,
+   "mid": 1229,
+   "num": 10,
+   "wakeEquipId": 116004
+  },
+  "104029": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 3,
+   "level": 40,
+   "mallGoodsId": 5110038,
+   "mid": 1230,
+   "num": 25,
+   "wakeEquipId": 116005
+  },
+  "104030": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 3,
+   "level": 50,
+   "mallGoodsId": 5110039,
+   "mid": 1231,
+   "num": 40,
+   "wakeEquipId": 116006
+  },
+  "104057": {
+   "awake": 1,
+   "isNew": 0,
+   "job": 3,
+   "level": 50,
+   "mallGoodsId": 5110103,
+   "mid": 1251,
+   "num": 450,
+   "wakeEquipId": 116008
+  },
+  "104060": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 3,
+   "level": 60,
+   "mallGoodsId": 5110040,
+   "mid": 1267,
+   "num": 60,
+   "wakeEquipId": 116009
+  },
+  "104062": {
+   "awake": 1,
+   "isNew": 0,
+   "job": 3,
+   "level": 60,
+   "mallGoodsId": 5110121,
+   "mid": 1296,
+   "num": 888,
+   "wakeEquipId": 116016
+  },
+  "105024": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 3,
+   "level": 30,
+   "mallGoodsId": 5120037,
+   "mid": 1229,
+   "num": 10,
+   "wakeEquipId": 117004
+  },
+  "105030": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 3,
+   "level": 40,
+   "mallGoodsId": 5120038,
+   "mid": 1230,
+   "num": 25,
+   "wakeEquipId": 117005
+  },
+  "105031": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 3,
+   "level": 50,
+   "mallGoodsId": 5120039,
+   "mid": 1231,
+   "num": 30,
+   "wakeEquipId": 117006
+  },
+  "105059": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 3,
+   "level": 60,
+   "mallGoodsId": 5120040,
+   "mid": 1267,
+   "num": 40,
+   "wakeEquipId": 117007
+  },
+  "105068": {
+   "awake": 1,
+   "isNew": 0,
+   "job": 3,
+   "level": 50,
+   "mallGoodsId": 5120103,
+   "mid": 1251,
+   "num": 450,
+   "wakeEquipId": 117012
+  },
+  "105069": {
+   "awake": 1,
+   "isNew": 0,
+   "job": 3,
+   "level": 60,
+   "mallGoodsId": 5120121,
+   "mid": 1296,
+   "num": 888,
+   "wakeEquipId": 117013
+  },
+  "106023": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 4,
+   "level": 30,
+   "mallGoodsId": 5110041,
+   "mid": 1229,
+   "num": 10,
+   "wakeEquipId": 118004
+  },
+  "106029": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 4,
+   "level": 40,
+   "mallGoodsId": 5110042,
+   "mid": 1230,
+   "num": 25,
+   "wakeEquipId": 118005
+  },
+  "106030": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 4,
+   "level": 50,
+   "mallGoodsId": 5110043,
+   "mid": 1231,
+   "num": 40,
+   "wakeEquipId": 118006
+  },
+  "106057": {
+   "awake": 1,
+   "isNew": 0,
+   "job": 4,
+   "level": 50,
+   "mallGoodsId": 5110104,
+   "mid": 1251,
+   "num": 450,
+   "wakeEquipId": 118008
+  },
+  "106060": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 4,
+   "level": 60,
+   "mallGoodsId": 5110044,
+   "mid": 1267,
+   "num": 60,
+   "wakeEquipId": 118009
+  },
+  "106062": {
+   "awake": 1,
+   "isNew": 0,
+   "job": 4,
+   "level": 60,
+   "mallGoodsId": 5110122,
+   "mid": 1296,
+   "num": 888,
+   "wakeEquipId": 118013
+  },
+  "107024": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 4,
+   "level": 30,
+   "mallGoodsId": 5120041,
+   "mid": 1229,
+   "num": 10,
+   "wakeEquipId": 119004
+  },
+  "107030": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 4,
+   "level": 40,
+   "mallGoodsId": 5120042,
+   "mid": 1230,
+   "num": 25,
+   "wakeEquipId": 119005
+  },
+  "107031": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 4,
+   "level": 50,
+   "mallGoodsId": 5120043,
+   "mid": 1231,
+   "num": 30,
+   "wakeEquipId": 119006
+  },
+  "107059": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 4,
+   "level": 60,
+   "mallGoodsId": 5120044,
+   "mid": 1267,
+   "num": 40,
+   "wakeEquipId": 119007
+  },
+  "107068": {
+   "awake": 1,
+   "isNew": 0,
+   "job": 4,
+   "level": 50,
+   "mallGoodsId": 5120104,
+   "mid": 1251,
+   "num": 450,
+   "wakeEquipId": 119012
+  },
+  "107069": {
+   "awake": 1,
+   "isNew": 0,
+   "job": 4,
+   "level": 60,
+   "mallGoodsId": 5120122,
+   "mid": 1296,
+   "num": 888,
+   "wakeEquipId": 119013
+  },
+  "108016": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 5,
+   "level": 30,
+   "mallGoodsId": 5110045,
+   "mid": 1229,
+   "num": 10,
+   "wakeEquipId": 120004
+  },
+  "108019": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 5,
+   "level": 40,
+   "mallGoodsId": 5110046,
+   "mid": 1230,
+   "num": 25,
+   "wakeEquipId": 120005
+  },
+  "108022": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 5,
+   "level": 50,
+   "mallGoodsId": 5110047,
+   "mid": 1231,
+   "num": 40,
+   "wakeEquipId": 120006
+  },
+  "108029": {
+   "awake": 1,
+   "isNew": 0,
+   "job": 5,
+   "level": 50,
+   "mallGoodsId": 5110105,
+   "mid": 1251,
+   "num": 450,
+   "wakeEquipId": 120008
+  },
+  "108032": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 5,
+   "level": 60,
+   "mallGoodsId": 5110048,
+   "mid": 1267,
+   "num": 60,
+   "wakeEquipId": 120009
+  },
+  "108034": {
+   "awake": 1,
+   "isNew": 0,
+   "job": 5,
+   "level": 60,
+   "mallGoodsId": 5110123,
+   "mid": 1296,
+   "num": 888,
+   "wakeEquipId": 120013
+  },
+  "109016": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 5,
+   "level": 30,
+   "mallGoodsId": 5120045,
+   "mid": 1229,
+   "num": 10,
+   "wakeEquipId": 121004
+  },
+  "109019": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 5,
+   "level": 40,
+   "mallGoodsId": 5120046,
+   "mid": 1230,
+   "num": 25,
+   "wakeEquipId": 121005
+  },
+  "109022": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 5,
+   "level": 50,
+   "mallGoodsId": 5120047,
+   "mid": 1231,
+   "num": 30,
+   "wakeEquipId": 121006
+  },
+  "109031": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 5,
+   "level": 60,
+   "mallGoodsId": 5120048,
+   "mid": 1267,
+   "num": 40,
+   "wakeEquipId": 121007
+  },
+  "109040": {
+   "awake": 1,
+   "isNew": 0,
+   "job": 5,
+   "level": 50,
+   "mallGoodsId": 5120105,
+   "mid": 1251,
+   "num": 450,
+   "wakeEquipId": 121012
+  },
+  "109041": {
+   "awake": 1,
+   "isNew": 0,
+   "job": 5,
+   "level": 60,
+   "mallGoodsId": 5120123,
+   "mid": 1296,
+   "num": 888,
+   "wakeEquipId": 121013
+  },
+  "1100018": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 9,
+   "level": 30,
+   "mallGoodsId": 5230093,
+   "mid": 1229,
+   "num": 6,
+   "wakeEquipId": 1100041
+  },
+  "1100023": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 9,
+   "level": 40,
+   "mallGoodsId": 5230094,
+   "mid": 1230,
+   "num": 15,
+   "wakeEquipId": 1100042
+  },
+  "1100028": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 9,
+   "level": 50,
+   "mallGoodsId": 5230095,
+   "mid": 1231,
+   "num": 20,
+   "wakeEquipId": 1100043
+  },
+  "1100034": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 9,
+   "level": 60,
+   "mallGoodsId": 5230096,
+   "mid": 1267,
+   "num": 30,
+   "wakeEquipId": 1100044
+  },
+  "110018": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 6,
+   "level": 30,
+   "mallGoodsId": 5110049,
+   "mid": 1229,
+   "num": 10,
+   "wakeEquipId": 122004
+  },
+  "110023": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 6,
+   "level": 40,
+   "mallGoodsId": 5110050,
+   "mid": 1230,
+   "num": 25,
+   "wakeEquipId": 122005
+  },
+  "110028": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 6,
+   "level": 50,
+   "mallGoodsId": 5110051,
+   "mid": 1231,
+   "num": 40,
+   "wakeEquipId": 122006
+  },
+  "110034": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 6,
+   "level": 60,
+   "mallGoodsId": 5110052,
+   "mid": 1267,
+   "num": 60,
+   "wakeEquipId": 122009
+  },
+  "110035": {
+   "awake": 1,
+   "isNew": 0,
+   "job": 6,
+   "level": 50,
+   "mallGoodsId": 5110106,
+   "mid": 1251,
+   "num": 450,
+   "wakeEquipId": 122008
+  },
+  "110036": {
+   "awake": 1,
+   "isNew": 0,
+   "job": 6,
+   "level": 60,
+   "mallGoodsId": 5110124,
+   "mid": 1296,
+   "num": 888,
+   "wakeEquipId": 122013
+  },
+  "1101018": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 9,
+   "level": 30,
+   "mallGoodsId": 5250093,
+   "mid": 1229,
+   "num": 6,
+   "wakeEquipId": 1101041
+  },
+  "1101023": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 9,
+   "level": 40,
+   "mallGoodsId": 5250094,
+   "mid": 1230,
+   "num": 15,
+   "wakeEquipId": 1101042
+  },
+  "1101028": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 9,
+   "level": 50,
+   "mallGoodsId": 5250095,
+   "mid": 1231,
+   "num": 20,
+   "wakeEquipId": 1101043
+  },
+  "1101034": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 9,
+   "level": 60,
+   "mallGoodsId": 5250096,
+   "mid": 1267,
+   "num": 30,
+   "wakeEquipId": 1101044
+  },
+  "1102018": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 9,
+   "level": 30,
+   "mallGoodsId": 5260093,
+   "mid": 1229,
+   "num": 6,
+   "wakeEquipId": 1102041
+  },
+  "1102023": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 9,
+   "level": 40,
+   "mallGoodsId": 5260094,
+   "mid": 1230,
+   "num": 15,
+   "wakeEquipId": 1102042
+  },
+  "1102028": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 9,
+   "level": 50,
+   "mallGoodsId": 5260095,
+   "mid": 1231,
+   "num": 20,
+   "wakeEquipId": 1102043
+  },
+  "1102034": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 9,
+   "level": 60,
+   "mallGoodsId": 5260096,
+   "mid": 1267,
+   "num": 30,
+   "wakeEquipId": 1102044
+  },
+  "1103018": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 9,
+   "level": 30,
+   "mallGoodsId": 5240093,
+   "mid": 1229,
+   "num": 6,
+   "wakeEquipId": 1103041
+  },
+  "1103023": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 9,
+   "level": 40,
+   "mallGoodsId": 5240094,
+   "mid": 1230,
+   "num": 15,
+   "wakeEquipId": 1103042
+  },
+  "1103028": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 9,
+   "level": 50,
+   "mallGoodsId": 5240095,
+   "mid": 1231,
+   "num": 20,
+   "wakeEquipId": 1103043
+  },
+  "1103034": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 9,
+   "level": 60,
+   "mallGoodsId": 5240096,
+   "mid": 1267,
+   "num": 30,
+   "wakeEquipId": 1103044
+  },
+  "1104018": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 9,
+   "level": 30,
+   "mallGoodsId": 5210093,
+   "mid": 1229,
+   "num": 6,
+   "wakeEquipId": 1104041
+  },
+  "1104023": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 9,
+   "level": 40,
+   "mallGoodsId": 5210094,
+   "mid": 1230,
+   "num": 15,
+   "wakeEquipId": 1104042
+  },
+  "1104028": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 9,
+   "level": 50,
+   "mallGoodsId": 5210095,
+   "mid": 1231,
+   "num": 20,
+   "wakeEquipId": 1104043
+  },
+  "1104034": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 9,
+   "level": 60,
+   "mallGoodsId": 5210096,
+   "mid": 1267,
+   "num": 30,
+   "wakeEquipId": 1104044
+  },
+  "1105018": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 9,
+   "level": 30,
+   "mallGoodsId": 5220093,
+   "mid": 1229,
+   "num": 6,
+   "wakeEquipId": 1105041
+  },
+  "1105023": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 9,
+   "level": 40,
+   "mallGoodsId": 5220094,
+   "mid": 1230,
+   "num": 15,
+   "wakeEquipId": 1105042
+  },
+  "1105028": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 9,
+   "level": 50,
+   "mallGoodsId": 5220095,
+   "mid": 1231,
+   "num": 20,
+   "wakeEquipId": 1105043
+  },
+  "1105034": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 9,
+   "level": 60,
+   "mallGoodsId": 5220096,
+   "mid": 1267,
+   "num": 30,
+   "wakeEquipId": 1105044
+  },
+  "111018": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 6,
+   "level": 30,
+   "mallGoodsId": 5120049,
+   "mid": 1229,
+   "num": 10,
+   "wakeEquipId": 123004
+  },
+  "111023": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 6,
+   "level": 40,
+   "mallGoodsId": 5120050,
+   "mid": 1230,
+   "num": 25,
+   "wakeEquipId": 123005
+  },
+  "111028": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 6,
+   "level": 50,
+   "mallGoodsId": 5120051,
+   "mid": 1231,
+   "num": 30,
+   "wakeEquipId": 123006
+  },
+  "111034": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 6,
+   "level": 60,
+   "mallGoodsId": 5120052,
+   "mid": 1267,
+   "num": 40,
+   "wakeEquipId": 123007
+  },
+  "111042": {
+   "awake": 1,
+   "isNew": 0,
+   "job": 6,
+   "level": 50,
+   "mallGoodsId": 5120106,
+   "mid": 1251,
+   "num": 450,
+   "wakeEquipId": 123012
+  },
+  "111043": {
+   "awake": 1,
+   "isNew": 0,
+   "job": 6,
+   "level": 60,
+   "mallGoodsId": 5120124,
+   "mid": 1296,
+   "num": 888,
+   "wakeEquipId": 123013
+  },
+  "1200015": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 10,
+   "level": 30,
+   "mallGoodsId": 5230109,
+   "mid": 1229,
+   "num": 6,
+   "wakeEquipId": 1210003
+  },
+  "1200019": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 10,
+   "level": 40,
+   "mallGoodsId": 5230108,
+   "mid": 1230,
+   "num": 15,
+   "wakeEquipId": 1210006
+  },
+  "1200023": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 10,
+   "level": 50,
+   "mallGoodsId": 5230107,
+   "mid": 1231,
+   "num": 20,
+   "wakeEquipId": 1210009
+  },
+  "1200027": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 10,
+   "level": 60,
+   "mallGoodsId": 5230106,
+   "mid": 1267,
+   "num": 30,
+   "wakeEquipId": 1210011
+  },
+  "1201015": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 10,
+   "level": 30,
+   "mallGoodsId": 5250109,
+   "mid": 1229,
+   "num": 6,
+   "wakeEquipId": 1211003
+  },
+  "1201019": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 10,
+   "level": 40,
+   "mallGoodsId": 5250108,
+   "mid": 1230,
+   "num": 15,
+   "wakeEquipId": 1211005
+  },
+  "1201023": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 10,
+   "level": 50,
+   "mallGoodsId": 5250107,
+   "mid": 1231,
+   "num": 20,
+   "wakeEquipId": 1211007
+  },
+  "1201027": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 10,
+   "level": 60,
+   "mallGoodsId": 5250106,
+   "mid": 1267,
+   "num": 30,
+   "wakeEquipId": 1211008
+  },
+  "1202015": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 10,
+   "level": 30,
+   "mallGoodsId": 5260109,
+   "mid": 1229,
+   "num": 6,
+   "wakeEquipId": 1212003
+  },
+  "1202019": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 10,
+   "level": 40,
+   "mallGoodsId": 5260108,
+   "mid": 1230,
+   "num": 15,
+   "wakeEquipId": 1212005
+  },
+  "1202023": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 10,
+   "level": 50,
+   "mallGoodsId": 5260107,
+   "mid": 1231,
+   "num": 20,
+   "wakeEquipId": 1212007
+  },
+  "1202027": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 10,
+   "level": 60,
+   "mallGoodsId": 5260106,
+   "mid": 1267,
+   "num": 30,
+   "wakeEquipId": 1212008
+  },
+  "1203015": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 10,
+   "level": 30,
+   "mallGoodsId": 5240109,
+   "mid": 1229,
+   "num": 6,
+   "wakeEquipId": 1213003
+  },
+  "1203019": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 10,
+   "level": 40,
+   "mallGoodsId": 5240108,
+   "mid": 1230,
+   "num": 15,
+   "wakeEquipId": 1213005
+  },
+  "1203023": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 10,
+   "level": 50,
+   "mallGoodsId": 5240107,
+   "mid": 1231,
+   "num": 20,
+   "wakeEquipId": 1213007
+  },
+  "1203027": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 10,
+   "level": 60,
+   "mallGoodsId": 5240106,
+   "mid": 1267,
+   "num": 30,
+   "wakeEquipId": 1213008
+  },
+  "1204015": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 10,
+   "level": 30,
+   "mallGoodsId": 5210109,
+   "mid": 1229,
+   "num": 6,
+   "wakeEquipId": 1214003
+  },
+  "1204019": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 10,
+   "level": 40,
+   "mallGoodsId": 5210108,
+   "mid": 1230,
+   "num": 15,
+   "wakeEquipId": 1214005
+  },
+  "1204023": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 10,
+   "level": 50,
+   "mallGoodsId": 5210107,
+   "mid": 1231,
+   "num": 20,
+   "wakeEquipId": 1214007
+  },
+  "1204027": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 10,
+   "level": 60,
+   "mallGoodsId": 5210106,
+   "mid": 1267,
+   "num": 30,
+   "wakeEquipId": 1214008
+  },
+  "1205015": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 10,
+   "level": 30,
+   "mallGoodsId": 5220109,
+   "mid": 1229,
+   "num": 6,
+   "wakeEquipId": 1215003
+  },
+  "1205019": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 10,
+   "level": 40,
+   "mallGoodsId": 5220108,
+   "mid": 1230,
+   "num": 15,
+   "wakeEquipId": 1215006
+  },
+  "1205023": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 10,
+   "level": 50,
+   "mallGoodsId": 5220107,
+   "mid": 1231,
+   "num": 20,
+   "wakeEquipId": 1215009
+  },
+  "1205027": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 10,
+   "level": 60,
+   "mallGoodsId": 5220106,
+   "mid": 1267,
+   "num": 30,
+   "wakeEquipId": 1215011
+  },
+  "124016": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 7,
+   "level": 30,
+   "mallGoodsId": 5110053,
+   "mid": 1229,
+   "num": 10,
+   "wakeEquipId": 126004
+  },
+  "124019": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 7,
+   "level": 40,
+   "mallGoodsId": 5110054,
+   "mid": 1230,
+   "num": 25,
+   "wakeEquipId": 126005
+  },
+  "124022": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 7,
+   "level": 50,
+   "mallGoodsId": 5110055,
+   "mid": 1231,
+   "num": 40,
+   "wakeEquipId": 126006
+  },
+  "124026": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 7,
+   "level": 60,
+   "mallGoodsId": 5110056,
+   "mid": 1267,
+   "num": 60,
+   "wakeEquipId": 126009
+  },
+  "124027": {
+   "awake": 1,
+   "isNew": 0,
+   "job": 7,
+   "level": 50,
+   "mallGoodsId": 5110107,
+   "mid": 1251,
+   "num": 450,
+   "wakeEquipId": 126008
+  },
+  "124028": {
+   "awake": 1,
+   "isNew": 0,
+   "job": 7,
+   "level": 60,
+   "mallGoodsId": 5110125,
+   "mid": 1296,
+   "num": 888,
+   "wakeEquipId": 126013
+  },
+  "125016": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 7,
+   "level": 30,
+   "mallGoodsId": 5120053,
+   "mid": 1229,
+   "num": 10,
+   "wakeEquipId": 127004
+  },
+  "125019": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 7,
+   "level": 40,
+   "mallGoodsId": 5120054,
+   "mid": 1230,
+   "num": 25,
+   "wakeEquipId": 127005
+  },
+  "125022": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 7,
+   "level": 50,
+   "mallGoodsId": 5120055,
+   "mid": 1231,
+   "num": 30,
+   "wakeEquipId": 127006
+  },
+  "125026": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 7,
+   "level": 60,
+   "mallGoodsId": 5120056,
+   "mid": 1267,
+   "num": 40,
+   "wakeEquipId": 127007
+  },
+  "125033": {
+   "awake": 1,
+   "isNew": 0,
+   "job": 7,
+   "level": 50,
+   "mallGoodsId": 5120107,
+   "mid": 1251,
+   "num": 450,
+   "wakeEquipId": 127012
+  },
+  "125034": {
+   "awake": 1,
+   "isNew": 0,
+   "job": 7,
+   "level": 60,
+   "mallGoodsId": 5120125,
+   "mid": 1296,
+   "num": 888,
+   "wakeEquipId": 127013
+  },
+  "128016": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 8,
+   "level": 30,
+   "mallGoodsId": 5110057,
+   "mid": 1229,
+   "num": 10,
+   "wakeEquipId": 130004
+  },
+  "128019": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 8,
+   "level": 40,
+   "mallGoodsId": 5110058,
+   "mid": 1230,
+   "num": 25,
+   "wakeEquipId": 130005
+  },
+  "128022": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 8,
+   "level": 50,
+   "mallGoodsId": 5110059,
+   "mid": 1231,
+   "num": 40,
+   "wakeEquipId": 130006
+  },
+  "128026": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 8,
+   "level": 60,
+   "mallGoodsId": 5110060,
+   "mid": 1267,
+   "num": 60,
+   "wakeEquipId": 130009
+  },
+  "128027": {
+   "awake": 1,
+   "isNew": 0,
+   "job": 8,
+   "level": 50,
+   "mallGoodsId": 5110108,
+   "mid": 1251,
+   "num": 450,
+   "wakeEquipId": 130008
+  },
+  "128028": {
+   "awake": 1,
+   "isNew": 0,
+   "job": 8,
+   "level": 60,
+   "mallGoodsId": 5110126,
+   "mid": 1296,
+   "num": 888,
+   "wakeEquipId": 130013
+  },
+  "129016": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 8,
+   "level": 30,
+   "mallGoodsId": 5120057,
+   "mid": 1229,
+   "num": 10,
+   "wakeEquipId": 131004
+  },
+  "129019": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 8,
+   "level": 40,
+   "mallGoodsId": 5120058,
+   "mid": 1230,
+   "num": 25,
+   "wakeEquipId": 131005
+  },
+  "129022": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 8,
+   "level": 50,
+   "mallGoodsId": 5120059,
+   "mid": 1231,
+   "num": 30,
+   "wakeEquipId": 131006
+  },
+  "129026": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 8,
+   "level": 60,
+   "mallGoodsId": 5120060,
+   "mid": 1267,
+   "num": 40,
+   "wakeEquipId": 131007
+  },
+  "129030": {
+   "awake": 1,
+   "isNew": 0,
+   "job": 8,
+   "level": 50,
+   "mallGoodsId": 5120108,
+   "mid": 1251,
+   "num": 450,
+   "wakeEquipId": 131012
+  },
+  "129031": {
+   "awake": 1,
+   "isNew": 0,
+   "job": 8,
+   "level": 60,
+   "mallGoodsId": 5120126,
+   "mid": 1296,
+   "num": 888,
+   "wakeEquipId": 131013
+  },
+  "132016": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 9,
+   "level": 30,
+   "mallGoodsId": 5110093,
+   "mid": 1229,
+   "num": 10,
+   "wakeEquipId": 134005
+  },
+  "132019": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 9,
+   "level": 40,
+   "mallGoodsId": 5110094,
+   "mid": 1230,
+   "num": 25,
+   "wakeEquipId": 134006
+  },
+  "132022": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 9,
+   "level": 50,
+   "mallGoodsId": 5110095,
+   "mid": 1231,
+   "num": 40,
+   "wakeEquipId": 134007
+  },
+  "132023": {
+   "awake": 1,
+   "isNew": 0,
+   "job": 9,
+   "level": 50,
+   "mallGoodsId": 5110109,
+   "mid": 1251,
+   "num": 450,
+   "wakeEquipId": 134010
+  },
+  "132027": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 9,
+   "level": 60,
+   "mallGoodsId": 5110096,
+   "mid": 1267,
+   "num": 60,
+   "wakeEquipId": 134008
+  },
+  "132028": {
+   "awake": 1,
+   "isNew": 0,
+   "job": 9,
+   "level": 60,
+   "mallGoodsId": 5110127,
+   "mid": 1296,
+   "num": 888,
+   "wakeEquipId": 134011
+  },
+  "133016": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 9,
+   "level": 30,
+   "mallGoodsId": 5120093,
+   "mid": 1229,
+   "num": 10,
+   "wakeEquipId": 135005
+  },
+  "133019": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 9,
+   "level": 40,
+   "mallGoodsId": 5120094,
+   "mid": 1230,
+   "num": 25,
+   "wakeEquipId": 135006
+  },
+  "133022": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 9,
+   "level": 50,
+   "mallGoodsId": 5120095,
+   "mid": 1231,
+   "num": 30,
+   "wakeEquipId": 135007
+  },
+  "133023": {
+   "awake": 1,
+   "isNew": 0,
+   "job": 9,
+   "level": 50,
+   "mallGoodsId": 5120109,
+   "mid": 1251,
+   "num": 450,
+   "wakeEquipId": 135010
+  },
+  "133027": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 9,
+   "level": 60,
+   "mallGoodsId": 5120096,
+   "mid": 1267,
+   "num": 40,
+   "wakeEquipId": 135008
+  },
+  "133028": {
+   "awake": 1,
+   "isNew": 0,
+   "job": 9,
+   "level": 60,
+   "mallGoodsId": 5120127,
+   "mid": 1296,
+   "num": 888,
+   "wakeEquipId": 135011
+  },
+  "136013": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 10,
+   "level": 30,
+   "mallGoodsId": 5110149,
+   "mid": 1229,
+   "num": 10,
+   "wakeEquipId": 138005
+  },
+  "136016": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 10,
+   "level": 40,
+   "mallGoodsId": 5110148,
+   "mid": 1230,
+   "num": 25,
+   "wakeEquipId": 138006
+  },
+  "136019": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 10,
+   "level": 50,
+   "mallGoodsId": 5110147,
+   "mid": 1231,
+   "num": 40,
+   "wakeEquipId": 138007
+  },
+  "136020": {
+   "awake": 1,
+   "isNew": 0,
+   "job": 10,
+   "level": 50,
+   "mallGoodsId": 5110151,
+   "mid": 1251,
+   "num": 450,
+   "wakeEquipId": 138010
+  },
+  "136023": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 10,
+   "level": 60,
+   "mallGoodsId": 5110146,
+   "mid": 1267,
+   "num": 60,
+   "wakeEquipId": 138008
+  },
+  "136024": {
+   "awake": 1,
+   "isNew": 0,
+   "job": 10,
+   "level": 60,
+   "mallGoodsId": 5110150,
+   "mid": 1296,
+   "num": 888,
+   "wakeEquipId": 138011
+  },
+  "137013": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 10,
+   "level": 30,
+   "mallGoodsId": 5120149,
+   "mid": 1229,
+   "num": 10,
+   "wakeEquipId": 139005
+  },
+  "137016": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 10,
+   "level": 40,
+   "mallGoodsId": 5120148,
+   "mid": 1230,
+   "num": 25,
+   "wakeEquipId": 139006
+  },
+  "137019": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 10,
+   "level": 50,
+   "mallGoodsId": 5120147,
+   "mid": 1231,
+   "num": 30,
+   "wakeEquipId": 139007
+  },
+  "137020": {
+   "awake": 1,
+   "isNew": 0,
+   "job": 10,
+   "level": 50,
+   "mallGoodsId": 5120151,
+   "mid": 1251,
+   "num": 450,
+   "wakeEquipId": 139010
+  },
+  "137023": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 10,
+   "level": 60,
+   "mallGoodsId": 5120146,
+   "mid": 1267,
+   "num": 40,
+   "wakeEquipId": 139008
+  },
+  "137024": {
+   "awake": 1,
+   "isNew": 0,
+   "job": 10,
+   "level": 60,
+   "mallGoodsId": 5120150,
+   "mid": 1296,
+   "num": 888,
+   "wakeEquipId": 139011
+  },
+  "140027": {
+   "awake": 2,
+   "isNew": 0,
+   "job": 201,
+   "level": 90,
+   "mallGoodsId": 4004648,
+   "mid": 1696,
+   "num": 20,
+   "wakeEquipId": 140030
+  },
+  "140028": {
+   "awake": 2,
+   "isNew": 0,
+   "job": 201,
+   "level": 95,
+   "mallGoodsId": 4004650,
+   "mid": 1698,
+   "num": 50,
+   "wakeEquipId": 140031
+  },
+  "140029": {
+   "awake": 2,
+   "isNew": 0,
+   "job": 201,
+   "level": 98,
+   "mallGoodsId": 4004650,
+   "mid": 1698,
+   "num": 100,
+   "wakeEquipId": 140032
+  },
+  "140033": {
+   "awake": 3,
+   "isNew": 1,
+   "job": 201,
+   "level": 90,
+   "mallGoodsId": 4004668,
+   "mid": 1699,
+   "num": 150,
+   "wakeEquipId": 140034
+  },
+  "141027": {
+   "awake": 2,
+   "isNew": 0,
+   "job": 201,
+   "level": 90,
+   "mallGoodsId": 4004648,
+   "mid": 1696,
+   "num": 20,
+   "wakeEquipId": 141030
+  },
+  "141028": {
+   "awake": 2,
+   "isNew": 0,
+   "job": 201,
+   "level": 95,
+   "mallGoodsId": 4004649,
+   "mid": 1697,
+   "num": 50,
+   "wakeEquipId": 141031
+  },
+  "141029": {
+   "awake": 2,
+   "isNew": 0,
+   "job": 201,
+   "level": 98,
+   "mallGoodsId": 4004649,
+   "mid": 1697,
+   "num": 100,
+   "wakeEquipId": 141032
+  },
+  "141033": {
+   "awake": 3,
+   "isNew": 1,
+   "job": 201,
+   "level": 90,
+   "mallGoodsId": 4004668,
+   "mid": 1699,
+   "num": 100,
+   "wakeEquipId": 141034
+  },
+  "142027": {
+   "awake": 2,
+   "isNew": 0,
+   "job": 202,
+   "level": 90,
+   "mallGoodsId": 4004648,
+   "mid": 1696,
+   "num": 20,
+   "wakeEquipId": 142030
+  },
+  "142028": {
+   "awake": 2,
+   "isNew": 0,
+   "job": 202,
+   "level": 95,
+   "mallGoodsId": 4004650,
+   "mid": 1698,
+   "num": 50,
+   "wakeEquipId": 142031
+  },
+  "142029": {
+   "awake": 2,
+   "isNew": 0,
+   "job": 202,
+   "level": 98,
+   "mallGoodsId": 4004650,
+   "mid": 1698,
+   "num": 100,
+   "wakeEquipId": 142032
+  },
+  "142033": {
+   "awake": 3,
+   "isNew": 1,
+   "job": 202,
+   "level": 90,
+   "mallGoodsId": 4004668,
+   "mid": 1699,
+   "num": 150,
+   "wakeEquipId": 142034
+  },
+  "143027": {
+   "awake": 2,
+   "isNew": 0,
+   "job": 202,
+   "level": 90,
+   "mallGoodsId": 4004648,
+   "mid": 1696,
+   "num": 20,
+   "wakeEquipId": 143030
+  },
+  "143028": {
+   "awake": 2,
+   "isNew": 0,
+   "job": 202,
+   "level": 95,
+   "mallGoodsId": 4004649,
+   "mid": 1697,
+   "num": 50,
+   "wakeEquipId": 143031
+  },
+  "143029": {
+   "awake": 2,
+   "isNew": 0,
+   "job": 202,
+   "level": 98,
+   "mallGoodsId": 4004649,
+   "mid": 1697,
+   "num": 100,
+   "wakeEquipId": 143032
+  },
+  "143033": {
+   "awake": 3,
+   "isNew": 1,
+   "job": 202,
+   "level": 90,
+   "mallGoodsId": 4004668,
+   "mid": 1699,
+   "num": 100,
+   "wakeEquipId": 143034
+  },
+  "144027": {
+   "awake": 2,
+   "isNew": 0,
+   "job": 203,
+   "level": 90,
+   "mallGoodsId": 4004648,
+   "mid": 1696,
+   "num": 20,
+   "wakeEquipId": 144030
+  },
+  "144028": {
+   "awake": 2,
+   "isNew": 0,
+   "job": 203,
+   "level": 95,
+   "mallGoodsId": 4004650,
+   "mid": 1698,
+   "num": 50,
+   "wakeEquipId": 144031
+  },
+  "144029": {
+   "awake": 2,
+   "isNew": 0,
+   "job": 203,
+   "level": 98,
+   "mallGoodsId": 4004650,
+   "mid": 1698,
+   "num": 100,
+   "wakeEquipId": 144032
+  },
+  "144033": {
+   "awake": 3,
+   "isNew": 1,
+   "job": 203,
+   "level": 90,
+   "mallGoodsId": 4004668,
+   "mid": 1699,
+   "num": 150,
+   "wakeEquipId": 144034
+  },
+  "145027": {
+   "awake": 2,
+   "isNew": 0,
+   "job": 203,
+   "level": 90,
+   "mallGoodsId": 4004648,
+   "mid": 1696,
+   "num": 20,
+   "wakeEquipId": 145030
+  },
+  "145028": {
+   "awake": 2,
+   "isNew": 0,
+   "job": 203,
+   "level": 95,
+   "mallGoodsId": 4004649,
+   "mid": 1697,
+   "num": 50,
+   "wakeEquipId": 145031
+  },
+  "145029": {
+   "awake": 2,
+   "isNew": 0,
+   "job": 203,
+   "level": 98,
+   "mallGoodsId": 4004649,
+   "mid": 1697,
+   "num": 100,
+   "wakeEquipId": 145032
+  },
+  "145033": {
+   "awake": 3,
+   "isNew": 1,
+   "job": 203,
+   "level": 90,
+   "mallGoodsId": 4004668,
+   "mid": 1699,
+   "num": 100,
+   "wakeEquipId": 145034
+  },
+  "2000010": {
+   "awake": 3,
+   "isNew": 1,
+   "job": 203,
+   "level": 90,
+   "mallGoodsId": 4004668,
+   "mid": 1699,
+   "num": 50,
+   "wakeEquipId": 2000011
+  },
+  "20002": {
+   "awake": 2,
+   "isNew": 0,
+   "job": 203,
+   "level": 90,
+   "mallGoodsId": 4004647,
+   "mid": 1695,
+   "num": 10,
+   "wakeEquipId": 20006
+  },
+  "20003": {
+   "awake": 2,
+   "isNew": 0,
+   "job": 203,
+   "level": 95,
+   "mallGoodsId": 4004648,
+   "mid": 1696,
+   "num": 25,
+   "wakeEquipId": 20007
+  },
+  "20005": {
+   "awake": 2,
+   "isNew": 0,
+   "job": 203,
+   "level": 98,
+   "mallGoodsId": 4004648,
+   "mid": 1696,
+   "num": 50,
+   "wakeEquipId": 20008
+  },
+  "200060": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 1,
+   "level": 30,
+   "mallGoodsId": 5230029,
+   "mid": 1229,
+   "num": 6,
+   "wakeEquipId": 311004
+  },
+  "200073": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 1,
+   "level": 40,
+   "mallGoodsId": 5230030,
+   "mid": 1230,
+   "num": 15,
+   "wakeEquipId": 311005
+  },
+  "200074": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 1,
+   "level": 50,
+   "mallGoodsId": 5230031,
+   "mid": 1231,
+   "num": 20,
+   "wakeEquipId": 311006
+  },
+  "2001010": {
+   "awake": 3,
+   "isNew": 1,
+   "job": 203,
+   "level": 90,
+   "mallGoodsId": 4004668,
+   "mid": 1699,
+   "num": 50,
+   "wakeEquipId": 2001011
+  },
+  "200108": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 2,
+   "level": 30,
+   "mallGoodsId": 5230033,
+   "mid": 1229,
+   "num": 6,
+   "wakeEquipId": 411004
+  },
+  "20012": {
+   "awake": 2,
+   "isNew": 0,
+   "job": 203,
+   "level": 90,
+   "mallGoodsId": 4004647,
+   "mid": 1695,
+   "num": 10,
+   "wakeEquipId": 20016
+  },
+  "200121": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 2,
+   "level": 50,
+   "mallGoodsId": 5230035,
+   "mid": 1231,
+   "num": 20,
+   "wakeEquipId": 411006
+  },
+  "200122": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 2,
+   "level": 40,
+   "mallGoodsId": 5230034,
+   "mid": 1230,
+   "num": 15,
+   "wakeEquipId": 411005
+  },
+  "200129": {
+   "awake": 1,
+   "isNew": 0,
+   "job": 10,
+   "level": 50,
+   "mallGoodsId": 5230101,
+   "mid": 1251,
+   "num": 450,
+   "wakeEquipId": 311998
+  },
+  "20013": {
+   "awake": 2,
+   "isNew": 0,
+   "job": 203,
+   "level": 95,
+   "mallGoodsId": 4004648,
+   "mid": 1696,
+   "num": 25,
+   "wakeEquipId": 20017
+  },
+  "200130": {
+   "awake": 1,
+   "isNew": 0,
+   "job": 10,
+   "level": 60,
+   "mallGoodsId": 5230103,
+   "mid": 1296,
+   "num": 888,
+   "wakeEquipId": 311997
+  },
+  "20015": {
+   "awake": 2,
+   "isNew": 0,
+   "job": 203,
+   "level": 98,
+   "mallGoodsId": 4004648,
+   "mid": 1696,
+   "num": 50,
+   "wakeEquipId": 20018
+  },
+  "2002010": {
+   "awake": 3,
+   "isNew": 1,
+   "job": 203,
+   "level": 90,
+   "mallGoodsId": 4004668,
+   "mid": 1699,
+   "num": 50,
+   "wakeEquipId": 2002011
+  },
+  "20022": {
+   "awake": 2,
+   "isNew": 0,
+   "job": 203,
+   "level": 90,
+   "mallGoodsId": 4004647,
+   "mid": 1695,
+   "num": 10,
+   "wakeEquipId": 20026
+  },
+  "20023": {
+   "awake": 2,
+   "isNew": 0,
+   "job": 203,
+   "level": 95,
+   "mallGoodsId": 4004647,
+   "mid": 1695,
+   "num": 25,
+   "wakeEquipId": 20027
+  },
+  "20025": {
+   "awake": 2,
+   "isNew": 0,
+   "job": 203,
+   "level": 98,
+   "mallGoodsId": 4004647,
+   "mid": 1695,
+   "num": 50,
+   "wakeEquipId": 20028
+  },
+  "2003010": {
+   "awake": 3,
+   "isNew": 1,
+   "job": 203,
+   "level": 90,
+   "mallGoodsId": 4004668,
+   "mid": 1699,
+   "num": 50,
+   "wakeEquipId": 2003011
+  },
+  "20032": {
+   "awake": 2,
+   "isNew": 0,
+   "job": 203,
+   "level": 90,
+   "mallGoodsId": 4004646,
+   "mid": 1694,
+   "num": 10,
+   "wakeEquipId": 20036
+  },
+  "20033": {
+   "awake": 2,
+   "isNew": 0,
+   "job": 203,
+   "level": 95,
+   "mallGoodsId": 4004647,
+   "mid": 1695,
+   "num": 25,
+   "wakeEquipId": 20037
+  },
+  "20035": {
+   "awake": 2,
+   "isNew": 0,
+   "job": 203,
+   "level": 98,
+   "mallGoodsId": 4004647,
+   "mid": 1695,
+   "num": 50,
+   "wakeEquipId": 20038
+  },
+  "2004010": {
+   "awake": 3,
+   "isNew": 1,
+   "job": 203,
+   "level": 90,
+   "mallGoodsId": 4004668,
+   "mid": 1699,
+   "num": 50,
+   "wakeEquipId": 2004011
+  },
+  "20042": {
+   "awake": 2,
+   "isNew": 0,
+   "job": 203,
+   "level": 90,
+   "mallGoodsId": 4004646,
+   "mid": 1694,
+   "num": 10,
+   "wakeEquipId": 20046
+  },
+  "20043": {
+   "awake": 2,
+   "isNew": 0,
+   "job": 203,
+   "level": 95,
+   "mallGoodsId": 4004646,
+   "mid": 1694,
+   "num": 25,
+   "wakeEquipId": 20047
+  },
+  "20045": {
+   "awake": 2,
+   "isNew": 0,
+   "job": 203,
+   "level": 98,
+   "mallGoodsId": 4004646,
+   "mid": 1694,
+   "num": 50,
+   "wakeEquipId": 20048
+  },
+  "2005010": {
+   "awake": 3,
+   "isNew": 1,
+   "job": 203,
+   "level": 90,
+   "mallGoodsId": 4004668,
+   "mid": 1699,
+   "num": 50,
+   "wakeEquipId": 2005011
+  },
+  "20052": {
+   "awake": 2,
+   "isNew": 0,
+   "job": 203,
+   "level": 90,
+   "mallGoodsId": 4004646,
+   "mid": 1694,
+   "num": 10,
+   "wakeEquipId": 20056
+  },
+  "20053": {
+   "awake": 2,
+   "isNew": 0,
+   "job": 203,
+   "level": 95,
+   "mallGoodsId": 4004646,
+   "mid": 1694,
+   "num": 25,
+   "wakeEquipId": 20057
+  },
+  "20055": {
+   "awake": 2,
+   "isNew": 0,
+   "job": 203,
+   "level": 98,
+   "mallGoodsId": 4004646,
+   "mid": 1694,
+   "num": 50,
+   "wakeEquipId": 20058
+  },
+  "201059": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 1,
+   "level": 30,
+   "mallGoodsId": 5250029,
+   "mid": 1229,
+   "num": 6,
+   "wakeEquipId": 312004
+  },
+  "201072": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 1,
+   "level": 40,
+   "mallGoodsId": 5250030,
+   "mid": 1230,
+   "num": 15,
+   "wakeEquipId": 312005
+  },
+  "201073": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 1,
+   "level": 50,
+   "mallGoodsId": 5250031,
+   "mid": 1231,
+   "num": 20,
+   "wakeEquipId": 312006
+  },
+  "201106": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 2,
+   "level": 30,
+   "mallGoodsId": 5250033,
+   "mid": 1229,
+   "num": 6,
+   "wakeEquipId": 412004
+  },
+  "201119": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 2,
+   "level": 50,
+   "mallGoodsId": 5250035,
+   "mid": 1231,
+   "num": 20,
+   "wakeEquipId": 412006
+  },
+  "201120": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 2,
+   "level": 40,
+   "mallGoodsId": 5250034,
+   "mid": 1230,
+   "num": 15,
+   "wakeEquipId": 412005
+  },
+  "201129": {
+   "awake": 1,
+   "isNew": 0,
+   "job": 10,
+   "level": 50,
+   "mallGoodsId": 5250101,
+   "mid": 1251,
+   "num": 450,
+   "wakeEquipId": 312998
+  },
+  "201130": {
+   "awake": 1,
+   "isNew": 0,
+   "job": 10,
+   "level": 60,
+   "mallGoodsId": 5250103,
+   "mid": 1296,
+   "num": 888,
+   "wakeEquipId": 312997
+  },
+  "202052": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 1,
+   "level": 30,
+   "mallGoodsId": 5260029,
+   "mid": 1229,
+   "num": 6,
+   "wakeEquipId": 313004
+  },
+  "202065": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 1,
+   "level": 40,
+   "mallGoodsId": 5260030,
+   "mid": 1230,
+   "num": 15,
+   "wakeEquipId": 313005
+  },
+  "202066": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 1,
+   "level": 50,
+   "mallGoodsId": 5260031,
+   "mid": 1231,
+   "num": 20,
+   "wakeEquipId": 313006
+  },
+  "202100": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 2,
+   "level": 30,
+   "mallGoodsId": 5260033,
+   "mid": 1229,
+   "num": 6,
+   "wakeEquipId": 413004
+  },
+  "202113": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 2,
+   "level": 50,
+   "mallGoodsId": 5260035,
+   "mid": 1231,
+   "num": 20,
+   "wakeEquipId": 413006
+  },
+  "202114": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 2,
+   "level": 40,
+   "mallGoodsId": 5260034,
+   "mid": 1230,
+   "num": 15,
+   "wakeEquipId": 413005
+  },
+  "202129": {
+   "awake": 1,
+   "isNew": 0,
+   "job": 10,
+   "level": 50,
+   "mallGoodsId": 5260101,
+   "mid": 1251,
+   "num": 450,
+   "wakeEquipId": 313998
+  },
+  "202130": {
+   "awake": 1,
+   "isNew": 0,
+   "job": 10,
+   "level": 60,
+   "mallGoodsId": 5260103,
+   "mid": 1296,
+   "num": 888,
+   "wakeEquipId": 313997
+  },
+  "203051": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 1,
+   "level": 30,
+   "mallGoodsId": 5240029,
+   "mid": 1229,
+   "num": 6,
+   "wakeEquipId": 314004
+  },
+  "203064": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 1,
+   "level": 40,
+   "mallGoodsId": 5240030,
+   "mid": 1230,
+   "num": 15,
+   "wakeEquipId": 314005
+  },
+  "203065": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 1,
+   "level": 50,
+   "mallGoodsId": 5240031,
+   "mid": 1231,
+   "num": 20,
+   "wakeEquipId": 314006
+  },
+  "203098": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 2,
+   "level": 30,
+   "mallGoodsId": 5240033,
+   "mid": 1229,
+   "num": 6,
+   "wakeEquipId": 414004
+  },
+  "203111": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 2,
+   "level": 50,
+   "mallGoodsId": 5240035,
+   "mid": 1231,
+   "num": 20,
+   "wakeEquipId": 414006
+  },
+  "203112": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 2,
+   "level": 40,
+   "mallGoodsId": 5240034,
+   "mid": 1230,
+   "num": 15,
+   "wakeEquipId": 414005
+  },
+  "203129": {
+   "awake": 1,
+   "isNew": 0,
+   "job": 10,
+   "level": 50,
+   "mallGoodsId": 5240101,
+   "mid": 1251,
+   "num": 450,
+   "wakeEquipId": 314998
+  },
+  "203130": {
+   "awake": 1,
+   "isNew": 0,
+   "job": 10,
+   "level": 60,
+   "mallGoodsId": 5240103,
+   "mid": 1296,
+   "num": 888,
+   "wakeEquipId": 314997
+  },
+  "204047": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 1,
+   "level": 30,
+   "mallGoodsId": 5210029,
+   "mid": 1229,
+   "num": 6,
+   "wakeEquipId": 315004
+  },
+  "204060": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 1,
+   "level": 40,
+   "mallGoodsId": 5210030,
+   "mid": 1230,
+   "num": 15,
+   "wakeEquipId": 315005
+  },
+  "204061": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 1,
+   "level": 50,
+   "mallGoodsId": 5210031,
+   "mid": 1231,
+   "num": 20,
+   "wakeEquipId": 315006
+  },
+  "204094": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 2,
+   "level": 30,
+   "mallGoodsId": 5210033,
+   "mid": 1229,
+   "num": 6,
+   "wakeEquipId": 415004
+  },
+  "204107": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 2,
+   "level": 50,
+   "mallGoodsId": 5210035,
+   "mid": 1231,
+   "num": 20,
+   "wakeEquipId": 415006
+  },
+  "204108": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 2,
+   "level": 40,
+   "mallGoodsId": 5210034,
+   "mid": 1230,
+   "num": 15,
+   "wakeEquipId": 415005
+  },
+  "204129": {
+   "awake": 1,
+   "isNew": 0,
+   "job": 10,
+   "level": 50,
+   "mallGoodsId": 5210101,
+   "mid": 1251,
+   "num": 450,
+   "wakeEquipId": 315998
+  },
+  "204130": {
+   "awake": 1,
+   "isNew": 0,
+   "job": 10,
+   "level": 60,
+   "mallGoodsId": 5210103,
+   "mid": 1296,
+   "num": 888,
+   "wakeEquipId": 315997
+  },
+  "205041": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 1,
+   "level": 30,
+   "mallGoodsId": 5220029,
+   "mid": 1229,
+   "num": 6,
+   "wakeEquipId": 316004
+  },
+  "205054": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 1,
+   "level": 40,
+   "mallGoodsId": 5220030,
+   "mid": 1230,
+   "num": 15,
+   "wakeEquipId": 316005
+  },
+  "205055": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 1,
+   "level": 50,
+   "mallGoodsId": 5220031,
+   "mid": 1231,
+   "num": 20,
+   "wakeEquipId": 316006
+  },
+  "205088": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 2,
+   "level": 30,
+   "mallGoodsId": 5220033,
+   "mid": 1229,
+   "num": 6,
+   "wakeEquipId": 416004
+  },
+  "205101": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 2,
+   "level": 50,
+   "mallGoodsId": 5220035,
+   "mid": 1231,
+   "num": 20,
+   "wakeEquipId": 416006
+  },
+  "205102": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 2,
+   "level": 40,
+   "mallGoodsId": 5220034,
+   "mid": 1230,
+   "num": 15,
+   "wakeEquipId": 416005
+  },
+  "205129": {
+   "awake": 1,
+   "isNew": 0,
+   "job": 10,
+   "level": 50,
+   "mallGoodsId": 5220101,
+   "mid": 1251,
+   "num": 450,
+   "wakeEquipId": 316998
+  },
+  "205130": {
+   "awake": 1,
+   "isNew": 0,
+   "job": 10,
+   "level": 60,
+   "mallGoodsId": 5220103,
+   "mid": 1296,
+   "num": 888,
+   "wakeEquipId": 316997
+  },
+  "300035": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 1,
+   "level": 60,
+   "mallGoodsId": 5230032,
+   "mid": 1267,
+   "num": 30,
+   "wakeEquipId": 311007
+  },
+  "301035": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 1,
+   "level": 60,
+   "mallGoodsId": 5250032,
+   "mid": 1267,
+   "num": 30,
+   "wakeEquipId": 312007
+  },
+  "302035": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 1,
+   "level": 60,
+   "mallGoodsId": 5260032,
+   "mid": 1267,
+   "num": 30,
+   "wakeEquipId": 313007
+  },
+  "303035": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 1,
+   "level": 60,
+   "mallGoodsId": 5240032,
+   "mid": 1267,
+   "num": 30,
+   "wakeEquipId": 314007
+  },
+  "304035": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 1,
+   "level": 60,
+   "mallGoodsId": 5210032,
+   "mid": 1267,
+   "num": 30,
+   "wakeEquipId": 315007
+  },
+  "305035": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 1,
+   "level": 60,
+   "mallGoodsId": 5220032,
+   "mid": 1267,
+   "num": 30,
+   "wakeEquipId": 316007
+  },
+  "400035": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 2,
+   "level": 60,
+   "mallGoodsId": 5230036,
+   "mid": 1267,
+   "num": 30,
+   "wakeEquipId": 411007
+  },
+  "401035": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 2,
+   "level": 60,
+   "mallGoodsId": 5250036,
+   "mid": 1267,
+   "num": 30,
+   "wakeEquipId": 412007
+  },
+  "402035": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 2,
+   "level": 60,
+   "mallGoodsId": 5260036,
+   "mid": 1267,
+   "num": 30,
+   "wakeEquipId": 413007
+  },
+  "403035": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 2,
+   "level": 60,
+   "mallGoodsId": 5240036,
+   "mid": 1267,
+   "num": 30,
+   "wakeEquipId": 414007
+  },
+  "404035": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 2,
+   "level": 60,
+   "mallGoodsId": 5210036,
+   "mid": 1267,
+   "num": 30,
+   "wakeEquipId": 415007
+  },
+  "405035": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 2,
+   "level": 60,
+   "mallGoodsId": 5220036,
+   "mid": 1267,
+   "num": 30,
+   "wakeEquipId": 416007
+  },
+  "500027": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 3,
+   "level": 30,
+   "mallGoodsId": 5230037,
+   "mid": 1229,
+   "num": 6,
+   "wakeEquipId": 511004
+  },
+  "500035": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 3,
+   "level": 40,
+   "mallGoodsId": 5230038,
+   "mid": 1230,
+   "num": 15,
+   "wakeEquipId": 511005
+  },
+  "500036": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 3,
+   "level": 50,
+   "mallGoodsId": 5230039,
+   "mid": 1231,
+   "num": 20,
+   "wakeEquipId": 511006
+  },
+  "500068": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 3,
+   "level": 60,
+   "mallGoodsId": 5230040,
+   "mid": 1267,
+   "num": 30,
+   "wakeEquipId": 511007
+  },
+  "501026": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 3,
+   "level": 30,
+   "mallGoodsId": 5250037,
+   "mid": 1229,
+   "num": 6,
+   "wakeEquipId": 512004
+  },
+  "501034": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 3,
+   "level": 40,
+   "mallGoodsId": 5250038,
+   "mid": 1230,
+   "num": 15,
+   "wakeEquipId": 512005
+  },
+  "501035": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 3,
+   "level": 50,
+   "mallGoodsId": 5250039,
+   "mid": 1231,
+   "num": 20,
+   "wakeEquipId": 512006
+  },
+  "501067": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 3,
+   "level": 60,
+   "mallGoodsId": 5250040,
+   "mid": 1267,
+   "num": 30,
+   "wakeEquipId": 512007
+  },
+  "502024": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 3,
+   "level": 30,
+   "mallGoodsId": 5260037,
+   "mid": 1229,
+   "num": 6,
+   "wakeEquipId": 513004
+  },
+  "502032": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 3,
+   "level": 40,
+   "mallGoodsId": 5260038,
+   "mid": 1230,
+   "num": 15,
+   "wakeEquipId": 513005
+  },
+  "502033": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 3,
+   "level": 50,
+   "mallGoodsId": 5260039,
+   "mid": 1231,
+   "num": 20,
+   "wakeEquipId": 513006
+  },
+  "502065": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 3,
+   "level": 60,
+   "mallGoodsId": 5260040,
+   "mid": 1267,
+   "num": 30,
+   "wakeEquipId": 513007
+  },
+  "503023": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 3,
+   "level": 30,
+   "mallGoodsId": 5240037,
+   "mid": 1229,
+   "num": 6,
+   "wakeEquipId": 514004
+  },
+  "503031": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 3,
+   "level": 40,
+   "mallGoodsId": 5240038,
+   "mid": 1230,
+   "num": 15,
+   "wakeEquipId": 514005
+  },
+  "503032": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 3,
+   "level": 50,
+   "mallGoodsId": 5240039,
+   "mid": 1231,
+   "num": 20,
+   "wakeEquipId": 514006
+  },
+  "503064": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 3,
+   "level": 60,
+   "mallGoodsId": 5240040,
+   "mid": 1267,
+   "num": 30,
+   "wakeEquipId": 514007
+  },
+  "504023": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 3,
+   "level": 30,
+   "mallGoodsId": 5210037,
+   "mid": 1229,
+   "num": 6,
+   "wakeEquipId": 515004
+  },
+  "504031": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 3,
+   "level": 40,
+   "mallGoodsId": 5210038,
+   "mid": 1230,
+   "num": 15,
+   "wakeEquipId": 515005
+  },
+  "504032": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 3,
+   "level": 50,
+   "mallGoodsId": 5210039,
+   "mid": 1231,
+   "num": 20,
+   "wakeEquipId": 515006
+  },
+  "504064": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 3,
+   "level": 60,
+   "mallGoodsId": 5210040,
+   "mid": 1267,
+   "num": 30,
+   "wakeEquipId": 515007
+  },
+  "505020": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 3,
+   "level": 30,
+   "mallGoodsId": 5220037,
+   "mid": 1229,
+   "num": 6,
+   "wakeEquipId": 516004
+  },
+  "505028": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 3,
+   "level": 40,
+   "mallGoodsId": 5220038,
+   "mid": 1230,
+   "num": 15,
+   "wakeEquipId": 516005
+  },
+  "505029": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 3,
+   "level": 50,
+   "mallGoodsId": 5220039,
+   "mid": 1231,
+   "num": 20,
+   "wakeEquipId": 516006
+  },
+  "505061": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 3,
+   "level": 60,
+   "mallGoodsId": 5220040,
+   "mid": 1267,
+   "num": 30,
+   "wakeEquipId": 516007
+  },
+  "600027": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 4,
+   "level": 30,
+   "mallGoodsId": 5230041,
+   "mid": 1229,
+   "num": 6,
+   "wakeEquipId": 611004
+  },
+  "600035": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 4,
+   "level": 40,
+   "mallGoodsId": 5230042,
+   "mid": 1230,
+   "num": 15,
+   "wakeEquipId": 611005
+  },
+  "600036": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 4,
+   "level": 50,
+   "mallGoodsId": 5230043,
+   "mid": 1231,
+   "num": 20,
+   "wakeEquipId": 611006
+  },
+  "600068": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 4,
+   "level": 60,
+   "mallGoodsId": 5230044,
+   "mid": 1267,
+   "num": 30,
+   "wakeEquipId": 611007
+  },
+  "601026": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 4,
+   "level": 30,
+   "mallGoodsId": 5250041,
+   "mid": 1229,
+   "num": 6,
+   "wakeEquipId": 612004
+  },
+  "601034": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 4,
+   "level": 40,
+   "mallGoodsId": 5250042,
+   "mid": 1230,
+   "num": 15,
+   "wakeEquipId": 612005
+  },
+  "601035": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 4,
+   "level": 50,
+   "mallGoodsId": 5250043,
+   "mid": 1231,
+   "num": 20,
+   "wakeEquipId": 612006
+  },
+  "601067": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 4,
+   "level": 60,
+   "mallGoodsId": 5250044,
+   "mid": 1267,
+   "num": 30,
+   "wakeEquipId": 612007
+  },
+  "602024": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 4,
+   "level": 30,
+   "mallGoodsId": 5260041,
+   "mid": 1229,
+   "num": 6,
+   "wakeEquipId": 613004
+  },
+  "602032": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 4,
+   "level": 40,
+   "mallGoodsId": 5260042,
+   "mid": 1230,
+   "num": 15,
+   "wakeEquipId": 613005
+  },
+  "602033": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 4,
+   "level": 50,
+   "mallGoodsId": 5260043,
+   "mid": 1231,
+   "num": 20,
+   "wakeEquipId": 613006
+  },
+  "602065": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 4,
+   "level": 60,
+   "mallGoodsId": 5260044,
+   "mid": 1267,
+   "num": 30,
+   "wakeEquipId": 613007
+  },
+  "603023": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 4,
+   "level": 30,
+   "mallGoodsId": 5240041,
+   "mid": 1229,
+   "num": 6,
+   "wakeEquipId": 614004
+  },
+  "603031": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 4,
+   "level": 40,
+   "mallGoodsId": 5240042,
+   "mid": 1230,
+   "num": 15,
+   "wakeEquipId": 614005
+  },
+  "603032": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 4,
+   "level": 50,
+   "mallGoodsId": 5240043,
+   "mid": 1231,
+   "num": 20,
+   "wakeEquipId": 614006
+  },
+  "603064": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 4,
+   "level": 60,
+   "mallGoodsId": 5240044,
+   "mid": 1267,
+   "num": 30,
+   "wakeEquipId": 614007
+  },
+  "604023": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 4,
+   "level": 30,
+   "mallGoodsId": 5210041,
+   "mid": 1229,
+   "num": 6,
+   "wakeEquipId": 615004
+  },
+  "604031": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 4,
+   "level": 40,
+   "mallGoodsId": 5210042,
+   "mid": 1230,
+   "num": 15,
+   "wakeEquipId": 615005
+  },
+  "604032": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 4,
+   "level": 50,
+   "mallGoodsId": 5210043,
+   "mid": 1231,
+   "num": 20,
+   "wakeEquipId": 615006
+  },
+  "604064": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 4,
+   "level": 60,
+   "mallGoodsId": 5210044,
+   "mid": 1267,
+   "num": 30,
+   "wakeEquipId": 615007
+  },
+  "605020": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 4,
+   "level": 30,
+   "mallGoodsId": 5220041,
+   "mid": 1229,
+   "num": 6,
+   "wakeEquipId": 616004
+  },
+  "605028": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 4,
+   "level": 40,
+   "mallGoodsId": 5220042,
+   "mid": 1230,
+   "num": 15,
+   "wakeEquipId": 616005
+  },
+  "605029": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 4,
+   "level": 50,
+   "mallGoodsId": 5220043,
+   "mid": 1231,
+   "num": 20,
+   "wakeEquipId": 616006
+  },
+  "605061": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 4,
+   "level": 60,
+   "mallGoodsId": 5220044,
+   "mid": 1267,
+   "num": 30,
+   "wakeEquipId": 616007
+  },
+  "700018": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 5,
+   "level": 30,
+   "mallGoodsId": 5230045,
+   "mid": 1229,
+   "num": 6,
+   "wakeEquipId": 711004
+  },
+  "700023": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 5,
+   "level": 40,
+   "mallGoodsId": 5230046,
+   "mid": 1230,
+   "num": 15,
+   "wakeEquipId": 711005
+  },
+  "700028": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 5,
+   "level": 50,
+   "mallGoodsId": 5230047,
+   "mid": 1231,
+   "num": 20,
+   "wakeEquipId": 711006
+  },
+  "700038": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 5,
+   "level": 60,
+   "mallGoodsId": 5230048,
+   "mid": 1267,
+   "num": 30,
+   "wakeEquipId": 711007
+  },
+  "701018": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 5,
+   "level": 30,
+   "mallGoodsId": 5250045,
+   "mid": 1229,
+   "num": 6,
+   "wakeEquipId": 712004
+  },
+  "701023": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 5,
+   "level": 40,
+   "mallGoodsId": 5250046,
+   "mid": 1230,
+   "num": 15,
+   "wakeEquipId": 712005
+  },
+  "701028": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 5,
+   "level": 50,
+   "mallGoodsId": 5250047,
+   "mid": 1231,
+   "num": 20,
+   "wakeEquipId": 712006
+  },
+  "701038": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 5,
+   "level": 60,
+   "mallGoodsId": 5250048,
+   "mid": 1267,
+   "num": 30,
+   "wakeEquipId": 712007
+  },
+  "702015": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 5,
+   "level": 30,
+   "mallGoodsId": 5260045,
+   "mid": 1229,
+   "num": 6,
+   "wakeEquipId": 713004
+  },
+  "702020": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 5,
+   "level": 40,
+   "mallGoodsId": 5260046,
+   "mid": 1230,
+   "num": 15,
+   "wakeEquipId": 713005
+  },
+  "702025": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 5,
+   "level": 50,
+   "mallGoodsId": 5260047,
+   "mid": 1231,
+   "num": 20,
+   "wakeEquipId": 713006
+  },
+  "702035": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 5,
+   "level": 60,
+   "mallGoodsId": 5260048,
+   "mid": 1267,
+   "num": 30,
+   "wakeEquipId": 713007
+  },
+  "703015": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 5,
+   "level": 30,
+   "mallGoodsId": 5240045,
+   "mid": 1229,
+   "num": 6,
+   "wakeEquipId": 714004
+  },
+  "703020": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 5,
+   "level": 40,
+   "mallGoodsId": 5240046,
+   "mid": 1230,
+   "num": 15,
+   "wakeEquipId": 714005
+  },
+  "703025": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 5,
+   "level": 50,
+   "mallGoodsId": 5240047,
+   "mid": 1231,
+   "num": 20,
+   "wakeEquipId": 714006
+  },
+  "703035": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 5,
+   "level": 60,
+   "mallGoodsId": 5240048,
+   "mid": 1267,
+   "num": 30,
+   "wakeEquipId": 714007
+  },
+  "704015": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 5,
+   "level": 30,
+   "mallGoodsId": 5210045,
+   "mid": 1229,
+   "num": 6,
+   "wakeEquipId": 715004
+  },
+  "704020": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 5,
+   "level": 40,
+   "mallGoodsId": 5210046,
+   "mid": 1230,
+   "num": 15,
+   "wakeEquipId": 715005
+  },
+  "704025": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 5,
+   "level": 50,
+   "mallGoodsId": 5210047,
+   "mid": 1231,
+   "num": 20,
+   "wakeEquipId": 715006
+  },
+  "704035": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 5,
+   "level": 60,
+   "mallGoodsId": 5210048,
+   "mid": 1267,
+   "num": 30,
+   "wakeEquipId": 715007
+  },
+  "705012": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 5,
+   "level": 30,
+   "mallGoodsId": 5220045,
+   "mid": 1229,
+   "num": 6,
+   "wakeEquipId": 716004
+  },
+  "705017": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 5,
+   "level": 40,
+   "mallGoodsId": 5220046,
+   "mid": 1230,
+   "num": 15,
+   "wakeEquipId": 716005
+  },
+  "705022": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 5,
+   "level": 50,
+   "mallGoodsId": 5220047,
+   "mid": 1231,
+   "num": 20,
+   "wakeEquipId": 716006
+  },
+  "705032": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 5,
+   "level": 60,
+   "mallGoodsId": 5220048,
+   "mid": 1267,
+   "num": 30,
+   "wakeEquipId": 716007
+  },
+  "800018": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 6,
+   "level": 30,
+   "mallGoodsId": 5230049,
+   "mid": 1229,
+   "num": 6,
+   "wakeEquipId": 811004
+  },
+  "800023": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 6,
+   "level": 40,
+   "mallGoodsId": 5230050,
+   "mid": 1230,
+   "num": 15,
+   "wakeEquipId": 811005
+  },
+  "800028": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 6,
+   "level": 50,
+   "mallGoodsId": 5230051,
+   "mid": 1231,
+   "num": 20,
+   "wakeEquipId": 811006
+  },
+  "800034": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 6,
+   "level": 60,
+   "mallGoodsId": 5230052,
+   "mid": 1267,
+   "num": 30,
+   "wakeEquipId": 811007
+  },
+  "801018": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 6,
+   "level": 30,
+   "mallGoodsId": 5250049,
+   "mid": 1229,
+   "num": 6,
+   "wakeEquipId": 812004
+  },
+  "801023": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 6,
+   "level": 40,
+   "mallGoodsId": 5250050,
+   "mid": 1230,
+   "num": 15,
+   "wakeEquipId": 812005
+  },
+  "801028": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 6,
+   "level": 50,
+   "mallGoodsId": 5250051,
+   "mid": 1231,
+   "num": 20,
+   "wakeEquipId": 812006
+  },
+  "801034": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 6,
+   "level": 60,
+   "mallGoodsId": 5250052,
+   "mid": 1267,
+   "num": 30,
+   "wakeEquipId": 812007
+  },
+  "802018": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 6,
+   "level": 30,
+   "mallGoodsId": 5260049,
+   "mid": 1229,
+   "num": 6,
+   "wakeEquipId": 813004
+  },
+  "802023": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 6,
+   "level": 40,
+   "mallGoodsId": 5260050,
+   "mid": 1230,
+   "num": 15,
+   "wakeEquipId": 813005
+  },
+  "802028": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 6,
+   "level": 50,
+   "mallGoodsId": 5260051,
+   "mid": 1231,
+   "num": 20,
+   "wakeEquipId": 813006
+  },
+  "802034": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 6,
+   "level": 60,
+   "mallGoodsId": 5260052,
+   "mid": 1267,
+   "num": 30,
+   "wakeEquipId": 813007
+  },
+  "803018": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 6,
+   "level": 30,
+   "mallGoodsId": 5240049,
+   "mid": 1229,
+   "num": 6,
+   "wakeEquipId": 814004
+  },
+  "803023": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 6,
+   "level": 40,
+   "mallGoodsId": 5240050,
+   "mid": 1230,
+   "num": 15,
+   "wakeEquipId": 814005
+  },
+  "803028": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 6,
+   "level": 50,
+   "mallGoodsId": 5240051,
+   "mid": 1231,
+   "num": 20,
+   "wakeEquipId": 814006
+  },
+  "803034": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 6,
+   "level": 60,
+   "mallGoodsId": 5240052,
+   "mid": 1267,
+   "num": 30,
+   "wakeEquipId": 814007
+  },
+  "804018": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 6,
+   "level": 30,
+   "mallGoodsId": 5210049,
+   "mid": 1229,
+   "num": 6,
+   "wakeEquipId": 815004
+  },
+  "804023": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 6,
+   "level": 40,
+   "mallGoodsId": 5210050,
+   "mid": 1230,
+   "num": 15,
+   "wakeEquipId": 815005
+  },
+  "804028": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 6,
+   "level": 50,
+   "mallGoodsId": 5210051,
+   "mid": 1231,
+   "num": 20,
+   "wakeEquipId": 815006
+  },
+  "804034": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 6,
+   "level": 60,
+   "mallGoodsId": 5210052,
+   "mid": 1267,
+   "num": 30,
+   "wakeEquipId": 815007
+  },
+  "805018": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 6,
+   "level": 30,
+   "mallGoodsId": 5220049,
+   "mid": 1229,
+   "num": 6,
+   "wakeEquipId": 816004
+  },
+  "805023": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 6,
+   "level": 40,
+   "mallGoodsId": 5220050,
+   "mid": 1230,
+   "num": 15,
+   "wakeEquipId": 816005
+  },
+  "805028": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 6,
+   "level": 50,
+   "mallGoodsId": 5220051,
+   "mid": 1231,
+   "num": 20,
+   "wakeEquipId": 816006
+  },
+  "805034": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 6,
+   "level": 60,
+   "mallGoodsId": 5220052,
+   "mid": 1267,
+   "num": 30,
+   "wakeEquipId": 816007
+  },
+  "900018": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 7,
+   "level": 30,
+   "mallGoodsId": 5230053,
+   "mid": 1229,
+   "num": 6,
+   "wakeEquipId": 910004
+  },
+  "900023": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 7,
+   "level": 40,
+   "mallGoodsId": 5230054,
+   "mid": 1230,
+   "num": 15,
+   "wakeEquipId": 910005
+  },
+  "900028": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 7,
+   "level": 50,
+   "mallGoodsId": 5230055,
+   "mid": 1231,
+   "num": 20,
+   "wakeEquipId": 910006
+  },
+  "900034": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 7,
+   "level": 60,
+   "mallGoodsId": 5230056,
+   "mid": 1267,
+   "num": 30,
+   "wakeEquipId": 910007
+  },
+  "901018": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 7,
+   "level": 30,
+   "mallGoodsId": 5250053,
+   "mid": 1229,
+   "num": 6,
+   "wakeEquipId": 911004
+  },
+  "901023": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 7,
+   "level": 40,
+   "mallGoodsId": 5250054,
+   "mid": 1230,
+   "num": 15,
+   "wakeEquipId": 911005
+  },
+  "901028": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 7,
+   "level": 50,
+   "mallGoodsId": 5250055,
+   "mid": 1231,
+   "num": 20,
+   "wakeEquipId": 911006
+  },
+  "901034": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 7,
+   "level": 60,
+   "mallGoodsId": 5250056,
+   "mid": 1267,
+   "num": 30,
+   "wakeEquipId": 911007
+  },
+  "902015": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 7,
+   "level": 30,
+   "mallGoodsId": 5260053,
+   "mid": 1229,
+   "num": 6,
+   "wakeEquipId": 912004
+  },
+  "902020": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 7,
+   "level": 40,
+   "mallGoodsId": 5260054,
+   "mid": 1230,
+   "num": 15,
+   "wakeEquipId": 912005
+  },
+  "902025": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 7,
+   "level": 50,
+   "mallGoodsId": 5260055,
+   "mid": 1231,
+   "num": 20,
+   "wakeEquipId": 912006
+  },
+  "902031": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 7,
+   "level": 60,
+   "mallGoodsId": 5260056,
+   "mid": 1267,
+   "num": 30,
+   "wakeEquipId": 912007
+  },
+  "903015": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 7,
+   "level": 30,
+   "mallGoodsId": 5240053,
+   "mid": 1229,
+   "num": 6,
+   "wakeEquipId": 913004
+  },
+  "903020": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 7,
+   "level": 40,
+   "mallGoodsId": 5240054,
+   "mid": 1230,
+   "num": 15,
+   "wakeEquipId": 913005
+  },
+  "903025": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 7,
+   "level": 50,
+   "mallGoodsId": 5240055,
+   "mid": 1231,
+   "num": 20,
+   "wakeEquipId": 913006
+  },
+  "903031": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 7,
+   "level": 60,
+   "mallGoodsId": 5240056,
+   "mid": 1267,
+   "num": 30,
+   "wakeEquipId": 913007
+  },
+  "904015": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 7,
+   "level": 30,
+   "mallGoodsId": 5210053,
+   "mid": 1229,
+   "num": 6,
+   "wakeEquipId": 914004
+  },
+  "904020": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 7,
+   "level": 40,
+   "mallGoodsId": 5210054,
+   "mid": 1230,
+   "num": 15,
+   "wakeEquipId": 914005
+  },
+  "904025": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 7,
+   "level": 50,
+   "mallGoodsId": 5210055,
+   "mid": 1231,
+   "num": 20,
+   "wakeEquipId": 914006
+  },
+  "904031": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 7,
+   "level": 60,
+   "mallGoodsId": 5210056,
+   "mid": 1267,
+   "num": 30,
+   "wakeEquipId": 914007
+  },
+  "905012": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 7,
+   "level": 30,
+   "mallGoodsId": 5220053,
+   "mid": 1229,
+   "num": 6,
+   "wakeEquipId": 915004
+  },
+  "905017": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 7,
+   "level": 40,
+   "mallGoodsId": 5220054,
+   "mid": 1230,
+   "num": 15,
+   "wakeEquipId": 915005
+  },
+  "905022": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 7,
+   "level": 50,
+   "mallGoodsId": 5220055,
+   "mid": 1231,
+   "num": 20,
+   "wakeEquipId": 915006
+  },
+  "905028": {
+   "awake": 0,
+   "isNew": 0,
+   "job": 7,
+   "level": 60,
+   "mallGoodsId": 5220056,
+   "mid": 1267,
+   "num": 30,
+   "wakeEquipId": 915007
+  }
+ }
+}

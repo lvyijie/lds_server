@@ -1,0 +1,205 @@
+{
+  "char_id": 88343134,
+  "user_name": "LDS8834313497",
+  "basic": {
+    "char_id": 88343134,
+    "user_name": "LDS8834313497",
+    "level": 2,
+    "job": 1,
+    "job_name": "战士",
+    "exp": 1230,
+    "coin": 100000200,
+    "dragon_coin": 999999,
+    "vip_level": 7,
+    "is_vip": true,
+    "is_annual": true,
+    "is_super_vip": true,
+    "super_vip_days": 3650,
+    "gender": 1,
+    "race": 1,
+    "mhp": 1100,
+    "chp": 300,
+    "mmp": 240,
+    "cmp": 160,
+    "msp": 100,
+    "csp": 100,
+    "total_exp": 2730
+  },
+  "position": {
+    "last_room": "newjobfbyongwangge_88343134_0_tr",
+    "x": 60,
+    "y": 40
+  },
+  "tasks": {
+    "513": {
+      "taskId": 513,
+      "step": 8,
+      "st": 1,
+      "ti": "513_8",
+      "ad": 1792142179120.0,
+      "fd": 1792142179218.0,
+      "ex": "",
+      "tm": 1
+    }
+  },
+  "skills": {
+    "sp": 101,
+    "list": [
+      {
+        "id": 1000,
+        "ck0": 1,
+        "ck1": 1,
+        "ck2": 0,
+        "ck3": 0
+      },
+      {
+        "id": 1001,
+        "ck0": 1,
+        "ck1": 1,
+        "ck2": 0,
+        "ck3": 0
+      },
+      {
+        "id": 1002,
+        "ck0": 1,
+        "ck1": 1,
+        "ck2": 0,
+        "ck3": 0
+      },
+      {
+        "id": 1003,
+        "ck0": 1,
+        "ck1": 1,
+        "ck2": 0,
+        "ck3": 0
+      }
+    ]
+  },
+  "bag": {
+    "cloth": [
+      100011,
+      100012,
+      100013,
+      100081,
+      100151,
+      600001
+    ],
+    "equip": [],
+    "gems": {},
+    "items": [
+      {
+        "gid": 1,
+        "mid": 100001,
+        "n": 1,
+        "t": 0,
+        "pl": 100,
+        "si": "",
+        "cd": 0,
+        "cl": 0,
+        "tsk": 3,
+        "ce": 25,
+        "ia": false,
+        "cb": true,
+        "egs": "",
+        "bp": {
+          "lp": 0.0,
+          "ep": 0.36,
+          "sp": 0.28,
+          "bp": 0.36
+        }
+      },
+      {
+        "gid": 2,
+        "mid": 1001,
+        "n": 1,
+        "t": 2,
+        "pl": 102
+      }
+    ]
+  },
+  "mounts": [
+    {
+      "rid": 1,
+      "pid": 100001,
+      "end": 4133980800000
+    }
+  ],
+  "mounts_seeded": true,
+  "default_rider_id": 1,
+  "riding_pet_id": 0,
+  "riding_rid": 0,
+  "guarding_rider_id": -1,
+  "pet": {
+    "eid": 0,
+    "bot": 4,
+    "bi": 2499,
+    "isevo": false,
+    "lv": 1,
+    "pti": 100408,
+    "ptn": "亚克",
+    "n": "亚克",
+    "chp": 855,
+    "mhp": 855,
+    "pi": 1,
+    "sk": [
+      {
+        "ski": 32071,
+        "skl": 0
+      }
+    ]
+  },
+  "pets": [
+    {
+      "pi": 1,
+      "pti": 100408,
+      "ptn": "亚克",
+      "n": "亚克",
+      "lv": 1,
+      "ecs": 0,
+      "eskill": 0,
+      "e": 0,
+      "chp": 855,
+      "mhp": 855,
+      "mnA": 100,
+      "mxA": 150,
+      "sk": [
+        {
+          "ski": 32071,
+          "skl": 0
+        }
+      ],
+      "bot": 4,
+      "bi": 2499,
+      "isevo": false,
+      "eid": 0
+    },
+    {
+      "pi": 2,
+      "pti": 100140,
+      "ptn": "小火狮",
+      "n": "小火狮",
+      "lv": 1,
+      "ecs": 0,
+      "eskill": 0,
+      "e": 9999999,
+      "chp": 120000,
+      "mhp": 120000,
+      "mnA": 15000,
+      "mxA": 25000,
+      "sk": [
+        {
+          "ski": 32071,
+          "skl": 1
+        }
+      ],
+      "bot": 4,
+      "bi": 2499,
+      "isevo": false,
+      "eid": 0
+    }
+  ],
+  "temp_scores": {
+    "4": 0
+  },
+  "follow_pet_id": 1
+}
