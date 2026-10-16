@@ -1,4 +1,4 @@
-# LDS Server (Dragon Knight Flash Game Server Engine)
+# LDS Server
 
 [![Python](https://img.shields.io/badge/Python-3.11%20%7C%203.12%20%7C%203.13-blue.svg)](https://www.python.org/)
 [![License](https://img.shields.io/badge/License-AGPL--3.0-blue)](LICENSE)
